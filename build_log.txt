@@ -1,0 +1,1241 @@
+﻿Generated 0/20 new headers
+build_develop.bat : 'vswhere.exe' is not recognized as an internal or external command,
+At line:1 char:397
++ ... ion C:\ssx; & C:\ssx\build_develop.bat -DSS_BACKEND=vulkan *> C:\ssx\ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ('vswhere.exe' i...ternal command,:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+operable program or batch file.
+-- The C compiler identification is MSVC 19.51.36260.0
+-- The CXX compiler identification is MSVC 19.51.36260.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- SS_BACKEND=vulkan: portable engine layer + backend/vulkan runtime; kernel coverage is tracked in src/backend/vulkan/README.md.
+-- Found Vulkan: C:/VulkanSDK/1.4.363.0/Lib/vulkan-1.lib (found version "1.4.363") found components: glslc glslangValidator
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- Found OpenMP_C: -openmp (found version "2.0")
+-- Found OpenMP_CXX: -openmp (found version "2.0")
+-- Found OpenMP: TRUE (found version "2.0")
+-- slangc at C:/VulkanSDK/1.4.363.0/Bin/slangc.exe is version '2026.17-25-gc7954ebd1' (need 2026.12.0.1); fetching the pinned release
+-- Using slangc C:/ssx/build/slang-2026.12.0.1-windows-x86_64/bin/slangc.exe (2026.12.0.1)
+-- SPIR-V: at most 13 concurrent slangc (46447 MB available)
+-- SPIR-V: 774 blobs to compile (per-blob, -j aware)
+-- slangc at C:/VulkanSDK/1.4.363.0/Bin/slangc.exe is version '2026.17-25-gc7954ebd1' (need 2026.12.0.1); fetching the pinned release
+-- Using slangc C:/ssx/build/slang-2026.12.0.1-windows-x86_64/bin/slangc.exe (2026.12.0.1)
+-- SfM SPIR-V: 11 blobs (reals: float;double; losses: trivial;huber;cauchy)
+-- slangc at C:/VulkanSDK/1.4.363.0/Bin/slangc.exe is version '2026.17-25-gc7954ebd1' (need 2026.12.0.1); fetching the pinned release
+-- Using slangc C:/ssx/build/slang-2026.12.0.1-windows-x86_64/bin/slangc.exe (2026.12.0.1)
+-- Inference SPIR-V (nn): 13 modules
+-- Inference SPIR-V (sam): 1 modules
+-- Inference SPIR-V (aliked): 1 modules
+-- Inference SPIR-V (loma): 1 modules
+-- Inference SPIR-V (metric3d): 1 modules
+-- Including Win32 support
+-- Found OpenGL: opengl32
+-- spirula_studio configured (backend: vulkan).
+-- Configuring done (16.5s)
+-- Generating done (0.8s)
+-- Build files have been written to: C:/ssx/build
+
+Available RAM : 46459 MB
+CPU cores     : 32
+Using jobs    : 32
+
+[0/2] Re-checking globbed directories...
+[0/1181] Checking comment lengths in uncommitted changes
+[2/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\win32_time.c.obj
+[3/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\osmesa_context.c.obj
+[4/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\win32_module.c.obj
+[5/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\platform.c.obj
+[6/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\null_joystick.c.obj
+[7/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\vulkan.c.obj
+[8/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\null_monitor.c.obj
+[9/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\monitor.c.obj
+[10/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\win32_thread.c.obj
+[11/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\window.c.obj
+[12/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\null_window.c.obj
+[13/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\init.c.obj
+[14/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\win32_init.c.obj
+[15/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\null_init.c.obj
+[16/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\win32_monitor.c.obj
+[17/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\egl_context.c.obj
+[18/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\context.c.obj
+[19/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\win32_joystick.c.obj
+[20/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\wgl_context.c.obj
+[21/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\input.c.obj
+[22/1181] Building C object _deps\glfw-build\src\CMakeFiles\glfw.dir\win32_window.c.obj
+[23/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\data\SourceCamera.cpp.obj
+[24/1181] Building CXX object CMakeFiles\imgui_glfw.dir\_deps\imgui-src\misc\cpp\imgui_stdlib.cpp.obj
+[25/1181] Building CXX object CMakeFiles\imgui_glfw.dir\_deps\imgui-src\backends\imgui_impl_opengl3.cpp.obj
+[26/1181] Building CXX object CMakeFiles\imgui_glfw.dir\_deps\imgui-src\imgui_tables.cpp.obj
+[27/1181] SPIR-V attention
+[28/1181] Building CXX object CMakeFiles\imgui_glfw.dir\_deps\imgui-src\backends\imgui_impl_glfw.cpp.obj
+[29/1181] Linking C static library _deps\glfw-build\src\glfw3.lib
+[30/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\app\EvalMetrics.cpp.obj
+[31/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\data\ImageProbe.cpp.obj
+[32/1181] Building CXX object CMakeFiles\imgui_glfw.dir\_deps\imgui-src\imgui_draw.cpp.obj
+[33/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\data\CameraMath.cpp.obj
+[34/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\data\DistortionFit.cpp.obj
+[35/1181] Building CXX object CMakeFiles\ss_i18n.dir\src\i18n\Locale.cpp.obj
+[36/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\data\PostSplit.cpp.obj
+[37/1181] SPIR-V attention_coop
+[38/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\data\SceneTransform.cpp.obj
+[39/1181] Building CXX object CMakeFiles\imgui_glfw.dir\_deps\imgui-src\imgui_widgets.cpp.obj
+[40/1181] Linking CXX static library ss_i18n.lib
+[41/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\checkpoint\SplatPly.cpp.obj
+[42/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\data\parsers\DatasetCommon.cpp.obj
+[43/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\app\webviewer\HttpServer.cpp.obj
+[44/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\core\ExrImage.cpp.obj
+[45/1181] SPIR-V conv
+[46/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineColorSpace.cpp.obj
+[47/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineBackground.cpp.obj
+[48/1181] SPIR-V background_sh.background_sh_bwd_reduce
+[49/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineBilagrid.cpp.obj
+[50/1181] Building CXX object CMakeFiles\imgui_glfw.dir\_deps\imgui-src\imgui.cpp.obj
+[51/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\app\webviewer\Viewer.cpp.obj
+[52/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineScenes.cpp.obj
+[53/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineSetup.cpp.obj
+[54/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\data\parsers\NerfstudioParser.cpp.obj
+[55/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\data\parsers\MetashapeParser.cpp.obj
+[56/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EnginePpisp.cpp.obj
+[57/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineDataManager.cpp.obj
+[58/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\app\webviewer\RenderWorker.cpp.obj
+[59/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineDensify.cpp.obj
+[60/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\data\parsers\ColmapParser.cpp.obj
+[61/1181] SPIR-V conv_wide
+[62/1181] SPIR-V background_sh.background_sh_bwd_reduce.noint64
+[63/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineOptim.cpp.obj
+[64/1181] SPIR-V background_sh.background_sh_bwd.noint64
+[65/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineQuery.cpp.obj
+[66/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineSetupWarped.cpp.obj
+[67/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineState.cpp.obj
+[68/1181] SPIR-V bilagrid_affine.bilagrid_affine_bwd_v1_grid.atomicadd
+[69/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\external\stb_image_write_impl.cpp.obj
+[70/1181] SPIR-V background_sh.background_sh_bwd
+[71/1181] Building C object CMakeFiles\csrc_portable.dir\src\external\miniz.c.obj
+[72/1181] SPIR-V elementwise
+[73/1181] SPIR-V bilagrid_affine.bilagrid_affine_bwd_v2.atomicadd
+[74/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\external\stb_image_impl.cpp.obj
+[75/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineCheckpoint.cpp.obj
+[76/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineForward.cpp.obj
+[77/1181] SPIR-V bilagrid_affine.bilagrid_affine_bwd_v1_grid
+[78/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineLoss.cpp.obj
+[79/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\engine\EngineTrainStep.cpp.obj
+[80/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\checkpoint\Adapt.cpp.obj
+[81/1181] SPIR-V bilagrid_affine.bilagrid_affine_bwd_v2
+[82/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\mesh\MeshLog.cpp.obj
+[83/1181] SPIR-V bilagrid_affine.bilagrid_affine_bwd_v1_rgb.atomicadd
+[84/1181] SPIR-V background_sh.background_sh_fwd
+[85/1181] Linking CXX static library imgui_glfw.lib
+[86/1181] SPIR-V bilagrid_affine.bilagrid_affine_fwd
+[87/1181] SPIR-V bilagrid_affine.bilagrid_affine_bwd_v1_rgb
+[88/1181] SPIR-V bilagrid_affine.bilagrid_affine_fwd.atomicadd
+[89/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\mesh\Delaunay3D.cpp.obj
+[90/1181] SPIR-V background_sh.background_sh_fwd.noint64
+[91/1181] SPIR-V bilagrid_affine.bilagrid_sample_fwd.atomicadd
+[92/1181] SPIR-V bilagrid_affine.bilagrid_sample_fwd
+[93/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\data\DataManager.cpp.obj
+[94/1181] SPIR-V bilagrid_depth.bilagrid_depth_bwd_v1_depth.atomicadd
+[95/1181] SPIR-V bilagrid_depth.bilagrid_depth_bwd_v1_depth
+[96/1181] SPIR-V bilagrid_depth.bilagrid_depth_fwd.atomicadd
+[97/1181] SPIR-V bilagrid_depth.bilagrid_depth_bwd_v2.atomicadd
+[98/1181] SPIR-V bilagrid_depth.bilagrid_depth_bwd_v1_grid.atomicadd
+[99/1181] SPIR-V bilagrid_depth.bilagrid_depth_bwd_v2
+[100/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\mesh\OccupancyEvaluator.cpp.obj
+[101/1181] SPIR-V bilagrid_depth.bilagrid_depth_bwd_v1_grid
+[102/1181] SPIR-V bilagrid_affine.bilagrid_sample_bwd.atomicadd
+[103/1181] SPIR-V bilagrid_loglinear.bilagrid_loglinear_bwd_v1_grid.atomicadd
+[104/1181] SPIR-V bilagrid_depth.bilagrid_depth_fwd
+[105/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\kernels\bilagrid\BilagridBindings.cpp.obj
+[106/1181] SPIR-V bilagrid_loglinear.bilagrid_loglinear_bwd_v1_grid
+[107/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\mesh\MeshExport.cpp.obj
+[108/1181] SPIR-V bilagrid_normal.bilagrid_normal_bwd_v1_grid.atomicadd
+[109/1181] SPIR-V bilagrid_loglinear.bilagrid_loglinear_fwd.atomicadd
+[110/1181] SPIR-V bilagrid_normal.bilagrid_normal_bwd_v1_normal.atomicadd
+[111/1181] SPIR-V bilagrid_loglinear.bilagrid_loglinear_fwd
+[112/1181] SPIR-V bilagrid_normal.bilagrid_normal_bwd_v1_grid
+[113/1181] SPIR-V bilagrid_normal.bilagrid_normal_bwd_v1_normal
+[114/1181] SPIR-V bilagrid_normal.bilagrid_normal_bwd_v2.atomicadd
+[115/1181] SPIR-V bilagrid_loglinear.bilagrid_loglinear_bwd_v1_rgb.atomicadd
+[116/1181] SPIR-V bilagrid_loglinear.bilagrid_loglinear_bwd_v1_rgb
+[117/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\mesh\MeshingRasterHost.cpp.obj
+[118/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\mesh\MeshImport.cpp.obj
+[119/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\app\TrainerCore.cpp.obj
+[120/1181] SPIR-V bilagrid_normal.bilagrid_normal_fwd.atomicadd
+[121/1181] SPIR-V bilagrid_normal.bilagrid_normal_bwd_v2
+[122/1181] SPIR-V bilagrid_normal.bilagrid_normal_fwd
+[123/1181] SPIR-V bilagrid_affine.bilagrid_sample_bwd
+[124/1181] SPIR-V bilagrid_optim.bilagrid_tv_adagrad.atomicadd.noint64
+[125/1181] SPIR-V bilagrid_optim.bilagrid_tv_adagrad.atomicadd.int8
+[126/1181] SPIR-V bilagrid_optim.bilagrid_tv_adagrad.atomicadd.int8.noint64
+[127/1181] SPIR-V bilagrid_optim.bilagrid_tv_adagrad.atomicadd
+[128/1181] SPIR-V bilagrid_optim.bilagrid_tv_adagrad.int8.noint64
+[129/1181] SPIR-V bilagrid_optim.bilagrid_tv_adagrad.int8
+[130/1181] SPIR-V bilagrid_loglinear.bilagrid_loglinear_bwd_v2.atomicadd
+[131/1181] SPIR-V bilagrid_optim.bilagrid_tv_adagrad.noint64
+[132/1181] SPIR-V bilagrid_optim.bilagrid_tv_adagrad
+[133/1181] SPIR-V bilagrid_optim.bilagrid_tv_adam.atomicadd.noint64
+[134/1181] SPIR-V bilagrid_optim.bilagrid_tv_adam.atomicadd.int8.noint64
+[135/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\checkpoint\Resume.cpp.obj
+[136/1181] SPIR-V bilagrid_optim.bilagrid_tv_adam.atomicadd.int8
+[137/1181] SPIR-V bilagrid_loglinear.bilagrid_loglinear_bwd_v2
+[138/1181] SPIR-V bilagrid_optim.bilagrid_tv_adam.int8.noint64
+[139/1181] SPIR-V bilagrid_optim.bilagrid_tv_adam.atomicadd
+[140/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\mesh\MeshUV.cpp.obj
+[141/1181] SPIR-V bilagrid_optim.bilagrid_tv_adam.int8
+[142/1181] SPIR-V bilagrid_optim.bilagrid_tv_adam.noint64
+[143/1181] SPIR-V bilagrid_optim.bilagrid_tv_adam
+[144/1181] Building CXX object CMakeFiles\csrc_portable.dir\src\mesh\MeshingHost.cpp.obj
+[145/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_bwd_v1_grid.atomicadd.noint64
+[146/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_bwd_v1_grid.atomicadd
+[147/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_bwd_v1_grid.noint64
+[148/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_bwd_v1_grid
+[149/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_fwd.atomicadd.noint64
+[150/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_bwd_v1_rgb.atomicadd
+[151/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_bwd_v1_rgb.atomicadd.noint64
+[152/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_bwd_v1_rgb
+[153/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_bwd_v1_rgb.noint64
+[154/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_fwd.noint64
+[155/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_fwd.atomicadd
+[156/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_fwd
+[157/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_sample_fwd.atomicadd.noint64
+[158/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_sample_fwd.atomicadd
+[159/1181] SPIR-V bilagrid_tv.bilagrid_affine_identity_init.atomicadd.int8.noint64
+[160/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_bwd_v2.atomicadd
+[161/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_bwd_v2.atomicadd.noint64
+[162/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_sample_fwd.noint64
+[163/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_sample_fwd
+[164/1181] SPIR-V bilagrid_tv.bilagrid_affine_identity_init.atomicadd.int8
+[165/1181] SPIR-V gemm
+[166/1181] SPIR-V bilagrid_tv.bilagrid_affine_identity_init.atomicadd.noint64
+[167/1181] SPIR-V bilagrid_tv.bilagrid_affine_identity_init.atomicadd
+[168/1181] SPIR-V bilagrid_tv.bilagrid_affine_identity_init.int8.noint64
+[169/1181] SPIR-V bilagrid_tv.bilagrid_affine_identity_init.int8
+[170/1181] SPIR-V bilagrid_tv.bilagrid_affine_identity_init.noint64
+[171/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_sample_bwd.atomicadd.noint64
+[172/1181] SPIR-V bilagrid_tv.bilagrid_affine_identity_init
+[173/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_bwd.atomicadd.int8.noint64
+[174/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_sample_bwd.atomicadd
+[175/1181] SPIR-V gemm_coop
+[176/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_bwd.atomicadd.int8
+[177/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_bwd.atomicadd.noint64
+[178/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_bwd.atomicadd
+[179/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_bwd_v2.noint64
+[180/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_bwd_v2
+[181/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_bwd.int8.noint64
+[182/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_bwd.int8
+[183/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_bwd.noint64
+[184/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_bwd
+[185/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_fwd.atomicadd.int8.noint64
+[186/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_fwd.atomicadd.int8
+[187/1181] SPIR-V misc
+[188/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_fwd.atomicadd.noint64
+[189/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_fwd.int8.noint64
+[190/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_fwd.atomicadd
+[191/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_fwd.int8
+[192/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_fwd.noint64
+[193/1181] SPIR-V bilagrid_tv.bilagrid_channel_mean_fwd
+[194/1181] SPIR-V bilagrid_tv.bilagrid_encode_q16.atomicadd.int8.noint64
+[195/1181] SPIR-V bilagrid_tv.bilagrid_encode_q16.atomicadd.int8
+[196/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_sample_bwd
+[197/1181] SPIR-V bilagrid_ppisp.bilagrid_ppisp_sample_bwd.noint64
+[198/1181] SPIR-V bilagrid_tv.bilagrid_encode_q16.atomicadd.noint64
+[199/1181] SPIR-V bilagrid_tv.bilagrid_encode_q16.atomicadd
+[200/1181] SPIR-V misc_wide
+[201/1181] SPIR-V bilagrid_tv.bilagrid_encode_q16.int8.noint64
+[202/1181] SPIR-V bilagrid_tv.bilagrid_encode_q16.noint64
+[203/1181] SPIR-V bilagrid_tv.bilagrid_scatter_floats.atomicadd.int8.noint64
+[204/1181] SPIR-V bilagrid_tv.bilagrid_encode_q16.int8
+[205/1181] SPIR-V bilagrid_tv.bilagrid_encode_q16
+[206/1181] SPIR-V bilagrid_tv.bilagrid_scatter_floats.atomicadd.int8
+[207/1181] SPIR-V bilagrid_tv.bilagrid_scatter_floats.atomicadd.noint64
+[208/1181] SPIR-V bilagrid_tv.bilagrid_scatter_floats.atomicadd
+[209/1181] SPIR-V bilagrid_tv.bilagrid_scatter_floats.int8.noint64
+[210/1181] SPIR-V bilagrid_tv.bilagrid_scatter_floats.int8
+[211/1181] SPIR-V bilagrid_tv.bilagrid_scatter_floats.noint64
+[212/1181] SPIR-V bilagrid_tv.bilagrid_scatter_floats
+[213/1181] SPIR-V norm
+[214/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_bwd.atomicadd.int8.noint64
+[215/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_bwd.atomicadd.int8
+[216/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_bwd.atomicadd.noint64
+[217/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_bwd.int8.noint64
+[218/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_bwd.atomicadd
+[219/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_bwd.noint64
+[220/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_bwd.int8
+[221/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_bwd
+[222/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_fwd.atomicadd.int8.noint64
+[223/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_fwd.atomicadd.int8
+[224/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_fwd.atomicadd.noint64
+[225/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_fwd.atomicadd
+[226/1181] SPIR-V norm_wide
+[227/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_fwd.int8.noint64
+[228/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_fwd.noint64
+[229/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_fwd.int8
+[230/1181] SPIR-V bilagrid_tv.ppisp_add_into_grad.atomicadd.int8.noint64
+[231/1181] SPIR-V bilagrid_tv.bilagrid_tv_loss_fwd
+[232/1181] SPIR-V bilagrid_tv.ppisp_add_into_grad.atomicadd.noint64
+[233/1181] SPIR-V bilagrid_tv.ppisp_add_into_grad.atomicadd.int8
+[234/1181] SPIR-V bilagrid_tv.ppisp_add_into_grad.atomicadd
+[235/1181] SPIR-V bilagrid_tv.ppisp_add_into_grad.int8.noint64
+[236/1181] SPIR-V bilagrid_tv.ppisp_add_into_grad.int8
+[237/1181] SPIR-V bilagrid_tv.ppisp_add_into_grad.noint64
+[238/1181] SPIR-V bilagrid_tv.ppisp_add_into_grad
+[239/1181] SPIR-V bilagrid_tv.ppisp_original_default_init.atomicadd.int8.noint64
+[240/1181] SPIR-V resample
+[241/1181] SPIR-V bilagrid_tv.ppisp_original_default_init.atomicadd.int8
+[242/1181] SPIR-V bilagrid_tv.ppisp_original_default_init.atomicadd.noint64
+[243/1181] SPIR-V bilagrid_tv.ppisp_original_default_init.atomicadd
+[244/1181] SPIR-V bilagrid_tv.ppisp_original_default_init.int8.noint64
+[245/1181] SPIR-V bilagrid_tv.ppisp_original_default_init.int8
+[246/1181] SPIR-V canny.canny_rgb.int8.noint64
+[247/1181] SPIR-V bilagrid_tv.ppisp_original_default_init.noint64
+[248/1181] SPIR-V bilagrid_tv.ppisp_original_default_init
+[249/1181] SPIR-V canny.canny_rgb.int8
+[250/1181] SPIR-V canny.canny_rgb.noint64
+[251/1181] SPIR-V canny.canny_scalar.int8.noint64
+[252/1181] SPIR-V canny.canny_rgb
+[253/1181] SPIR-V resample_wide
+[254/1181] SPIR-V canny.canny_scalar.int8
+[255/1181] SPIR-V canny.canny_scalar.noint64
+[256/1181] SPIR-V canny.canny_scalar
+[257/1181] SPIR-V canny.residual_luma.int8.noint64
+[258/1181] SPIR-V canny.residual_luma.int8
+[259/1181] SPIR-V canny.residual_luma.noint64
+[260/1181] SPIR-V canny.tukey_inplace.int8.noint64
+[261/1181] Embedding SPIR-V (nn: 13 modules)
+[262/1181] SPIR-V canny.tukey_inplace.int8
+[263/1181] SPIR-V canny.residual_luma
+[264/1181] SPIR-V canny.tukey_inplace.noint64
+[265/1181] SPIR-V canny.tukey_inplace
+[266/1181] Building CXX object CMakeFiles\ss_nn.dir\nn_shaders_nn.cpp.obj
+[267/1181] Building CXX object CMakeFiles\ss_nn.dir\src\external\stb_image_write_impl.cpp.obj
+[268/1181] SPIR-V densify.densify_accum_finalize
+[269/1181] SPIR-V densify.densify_accum_finalize.int8
+[270/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\core\Log.cpp.obj
+[271/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\vk\EmbeddedSpirv.cpp.obj
+[272/1181] Building CXX object CMakeFiles\ss_nn.dir\src\external\stb_image_impl.cpp.obj
+[273/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\io\Image.cpp.obj
+[274/1181] SPIR-V densify.densify_accum_finalize.int8.noint64
+[275/1181] Building C object CMakeFiles\ss_nn.dir\src\external\miniz.c.obj
+[276/1181] SPIR-V densify.densify_clip_scale.int8.noint64
+[277/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\OpMisc.cpp.obj
+[278/1181] SPIR-V densify.densify_clip_scale.noint64
+[279/1181] SPIR-V densify.densify_clip_scale
+[280/1181] SPIR-V densify.densify_accum_finalize.noint64
+[281/1181] SPIR-V densify.densify_clip_score.int8.noint64
+[282/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\OpAttention.cpp.obj
+[283/1181] SPIR-V densify.densify_clip_scale.int8
+[284/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\OpNorm.cpp.obj
+[285/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\OpGemm.cpp.obj
+[286/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\Device.cpp.obj
+[287/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\OpConv.cpp.obj
+[288/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\Tensor.cpp.obj
+[289/1181] SPIR-V densify.densify_clip_score.int8
+[290/1181] SPIR-V densify.densify_clip_score.noint64
+[291/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\vk\Stream.cpp.obj
+[292/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\vk\Context.cpp.obj
+[293/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\vk\Pipelines.cpp.obj
+[294/1181] SPIR-V densify.densify_clip_score
+[295/1181] Building CXX object CMakeFiles\ss_moge.dir\src\moge\model\Recover.cpp.obj
+[296/1181] SPIR-V densify.densify_copy_qsh_map.int8.noint64
+[297/1181] SPIR-V densify.densify_copy_qsh_map.noint64
+[298/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\io\Fetch.cpp.obj
+[299/1181] SPIR-V densify.densify_copy_qsh_map.int8
+[300/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\io\Onnx.cpp.obj
+[301/1181] SPIR-V densify.densify_copy_qsh_map
+[302/1181] Building CXX object CMakeFiles\ss_moge.dir\src\moge\model\Encoder.cpp.obj
+[303/1181] Building CXX object CMakeFiles\ss_moge.dir\src\moge\model\Fetch.cpp.obj
+[304/1181] Building CXX object CMakeFiles\ss_moge.dir\src\moge\model\Head.cpp.obj
+[305/1181] SPIR-V densify.densify_copy_qsh_pairs.int8.noint64
+[306/1181] Building CXX object CMakeFiles\ss_nn.dir\src\nn\vk\Memory.cpp.obj
+[307/1181] SPIR-V densify.densify_copy_qsh_pairs.int8
+[308/1181] SPIR-V densify.densify_copy_qsh_pairs
+[309/1181] SPIR-V densify.densify_efraimidis_keys.int8
+[310/1181] SPIR-V densify.densify_efraimidis_keys.int8.noint64
+[311/1181] SPIR-V densify.densify_efraimidis_keys.noint64
+[312/1181] SPIR-V densify.densify_copy_qsh_pairs.noint64
+[313/1181] SPIR-V densify.densify_efraimidis_keys
+[314/1181] SPIR-V densify.densify_gather_score.int8.noint64
+[315/1181] SPIR-V densify.densify_gather_score.int8
+[316/1181] SPIR-V densify.densify_gather_score
+[317/1181] SPIR-V densify.densify_gather_score.noint64
+[318/1181] SPIR-V densify.densify_mcmc_add_index_map.int8.noint64
+[319/1181] Building CXX object CMakeFiles\ss_nn.dir\src\core\ExrImage.cpp.obj
+[320/1181] Building CXX object CMakeFiles\ss_moge.dir\src\moge\model\Weights.cpp.obj
+[321/1181] SPIR-V densify.densify_mcmc_add_index_map.int8
+[322/1181] SPIR-V densify.densify_mcmc_add_index_map
+[323/1181] Linking CXX static library ss_nn.lib
+[324/1181] SPIR-V densify.densify_mcmc_add_index_map.noint64
+[325/1181] SPIR-V densify.densify_mcmc_compute_add.int8.noint64
+[326/1181] SPIR-V densify.densify_mcmc_add_noise.int8
+[327/1181] SPIR-V densify.densify_mcmc_add_noise.int8.noint64
+[328/1181] SPIR-V densify.densify_mcmc_add_noise
+[329/1181] Building CXX object CMakeFiles\ss_moge.dir\src\moge\model\Predictor.cpp.obj
+[330/1181] SPIR-V densify.densify_mcmc_add_noise.noint64
+[331/1181] SPIR-V detr
+[332/1181] Linking CXX static library ss_moge.lib
+[333/1181] SPIR-V densify.densify_mcmc_compute_add.int8
+[334/1181] SPIR-V densify.densify_mcmc_compute_add.noint64
+[335/1181] Embedding SPIR-V (sam: 1 modules)
+[336/1181] SPIR-V densify.densify_mcmc_compute_add
+[337/1181] SPIR-V densify.densify_mcmc_probs.int8.noint64
+[338/1181] Building CXX object CMakeFiles\ss_sam.dir\nn_shaders_sam.cpp.obj
+[339/1181] SPIR-V densify.densify_mcmc_probs.int8
+[340/1181] SPIR-V densify.densify_mcmc_reloc_index_map.int8.noint64
+[341/1181] SPIR-V densify.densify_mcmc_probs
+[342/1181] SPIR-V densify.densify_mcmc_probs.noint64
+[343/1181] SPIR-V aliked
+[344/1181] Embedding SPIR-V (aliked: 1 modules)
+[345/1181] SPIR-V densify.densify_mcmc_reloc_index_map.int8
+[346/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\MaskIo.cpp.obj
+[347/1181] SPIR-V densify.densify_mcmc_reloc_index_map.noint64
+[348/1181] SPIR-V densify.densify_mcmc_reloc_index_map
+[349/1181] Building CXX object CMakeFiles\ss_aliked.dir\nn_shaders_aliked.cpp.obj
+[350/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\MaskDilate.cpp.obj
+[351/1181] SPIR-V densify.densify_mcmc_relocation.int8.noint64
+[352/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\pipeline\PostProcess.cpp.obj
+[353/1181] SPIR-V densify.densify_mcmc_relocation
+[354/1181] SPIR-V densify.densify_mcmc_relocation.noint64
+[355/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\model\Common.cpp.obj
+[356/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\model\TextEncoder.cpp.obj
+[357/1181] SPIR-V densify.densify_mcmc_relocation.int8
+[358/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\model\ImageEncoder.cpp.obj
+[359/1181] SPIR-V densify.densify_mcmc_update_add.int8
+[360/1181] SPIR-V loma
+[361/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\model\HieraEncoder.cpp.obj
+[362/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\model\MemoryModule.cpp.obj
+[363/1181] SPIR-V densify.densify_mcmc_update_add.noint64
+[364/1181] SPIR-V densify.densify_mcmc_update_add.int8.noint64
+[365/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\model\SamDecoder.cpp.obj
+[366/1181] SPIR-V densify.densify_mcmc_update_reloc.int8
+[367/1181] Embedding SPIR-V (loma: 1 modules)
+[368/1181] SPIR-V densify.densify_mcmc_update_reloc.int8.noint64
+[369/1181] SPIR-V densify.densify_mcmc_update_add
+[370/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\model\SamModel.cpp.obj
+[371/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\model\Tokenizer.cpp.obj
+[372/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\model\Detector.cpp.obj
+[373/1181] Building CXX object CMakeFiles\ss_loma.dir\nn_shaders_loma.cpp.obj
+[374/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\Masking.cpp.obj
+[375/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\pipeline\Session.cpp.obj
+[376/1181] SPIR-V metric3d
+[377/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\model\Weights.cpp.obj
+[378/1181] SPIR-V densify.densify_mcmc_update_reloc.noint64
+[379/1181] Building CXX object CMakeFiles\ss_aliked.dir\src\aliked\model\Fetch.cpp.obj
+[380/1181] Embedding SPIR-V (metric3d: 1 modules)
+[381/1181] SPIR-V densify.densify_mcmc_update_reloc
+[382/1181] SPIR-V densify.densify_oversize_weight
+[383/1181] SPIR-V densify.densify_oversize_weight.int8.noint64
+[384/1181] Building CXX object CMakeFiles\ss_aliked.dir\src\aliked\model\AlikedModel.cpp.obj
+[385/1181] SPIR-V densify.densify_oversize_weight.noint64
+[386/1181] Building CXX object CMakeFiles\ss_metric3d.dir\nn_shaders_metric3d.cpp.obj
+[387/1181] Building CXX object CMakeFiles\ss_sam.dir\src\sam\pipeline\Tracker.cpp.obj
+[388/1181] SPIR-V densify.densify_oversize_weight.int8
+[389/1181] SPIR-V densify.densify_reloc_mask.int8
+[390/1181] SPIR-V densify.densify_reloc_mask
+[391/1181] Linking CXX static library ss_sam.lib
+[392/1181] SPIR-V densify.densify_reloc_mask.noint64
+[393/1181] Building CXX object CMakeFiles\ss_aliked.dir\src\aliked\model\Weights.cpp.obj
+[394/1181] SPIR-V densify.densify_reloc_mask.int8.noint64
+[395/1181] SPIR-V densify.densify_relocate_las.int8.noint64
+[396/1181] Building CXX object CMakeFiles\ss_loma.dir\src\loma\model\Descriptor.cpp.obj
+[397/1181] SPIR-V densify.densify_relocate_las.noint64
+[398/1181] SPIR-V densify.densify_relocate_las.int8
+[399/1181] Building CXX object CMakeFiles\ss_loma.dir\src\loma\model\Fetch.cpp.obj
+[400/1181] Building CXX object CMakeFiles\ss_aliked.dir\src\aliked\model\LightGlue.cpp.obj
+[401/1181] SPIR-V densify.densify_relocate_las
+[402/1181] Building CXX object CMakeFiles\ss_loma.dir\src\loma\model\Detector.cpp.obj
+[403/1181] SPIR-V densify.densify_revised_add_noise.int8.noint64
+[404/1181] Building CXX object CMakeFiles\ss_metric3d.dir\src\metric3d\model\Encoder.cpp.obj
+[405/1181] Building CXX object CMakeFiles\ss_metric3d.dir\src\metric3d\model\Fetch.cpp.obj
+[406/1181] SPIR-V densify.densify_revised_add_noise.int8
+[407/1181] Linking CXX static library ss_aliked.lib
+[408/1181] Building CXX object CMakeFiles\ss_loma.dir\src\loma\model\Dino.cpp.obj
+[409/1181] SPIR-V densify.densify_update_weight.int8.noint64
+[410/1181] SPIR-V densify.densify_revised_add_noise.noint64
+[411/1181] Building CXX object CMakeFiles\ss_loma.dir\src\loma\model\Matcher.cpp.obj
+[412/1181] SPIR-V densify.densify_update_weight.int8
+[413/1181] SPIR-V densify.densify_update_weight.noint64
+[414/1181] Building CXX object CMakeFiles\ss_loma.dir\src\loma\model\Extract.cpp.obj
+[415/1181] SPIR-V densify.densify_update_weight
+[416/1181] SPIR-V densify.densify_revised_add_noise
+[417/1181] Building CXX object CMakeFiles\metric3d_test.dir\src\metric3d\tests\metric3d_test.cpp.obj
+[418/1181] SPIR-V densify.normalize_clip_map.int8.noint64
+[419/1181] Building CXX object CMakeFiles\ss_loma.dir\src\loma\model\Dump.cpp.obj
+[420/1181] SPIR-V densify.normalize_clip_map.int8
+[421/1181] Building CXX object CMakeFiles\mask_dilate_test.dir\src\sam\tests\mask_dilate_test.cpp.obj
+[422/1181] Building CXX object CMakeFiles\ss_metric3d.dir\src\metric3d\model\Weights.cpp.obj
+[423/1181] Building CXX object CMakeFiles\ss_metric3d.dir\src\metric3d\model\Decoder.cpp.obj
+[424/1181] Building CXX object CMakeFiles\moge_test.dir\src\moge\tests\moge_test.cpp.obj
+[425/1181] SPIR-V densify.normalize_clip_map
+[426/1181] SPIR-V densify.normalize_clip_map.noint64
+[427/1181] Building CXX object CMakeFiles\ss_loma.dir\src\loma\model\Weights.cpp.obj
+[428/1181] SPIR-V fused_ssim.ssim_bwd_inplace.atomicadd.int8.noint64
+[429/1181] Linking CXX static library ss_loma.lib
+[430/1181] Building CXX object CMakeFiles\aliked_test.dir\src\aliked\tests\aliked_test.cpp.obj
+[431/1181] Building CXX object CMakeFiles\ss_metric3d.dir\src\metric3d\model\Predictor.cpp.obj
+[432/1181] Building CXX object CMakeFiles\loma_test.dir\src\loma\tests\loma_test.cpp.obj
+[433/1181] SPIR-V fused_ssim.ssim_bwd_inplace.atomicadd.int8
+[434/1181] Linking CXX static library ss_metric3d.lib
+[435/1181] SPIR-V fused_ssim.ssim_bwd_inplace.atomicadd.noint64
+[436/1181] Linking CXX executable mask_dilate_test.exe
+[437/1181] SPIR-V fused_ssim.ssim_bwd_inplace.atomicadd
+[438/1181] SPIR-V fused_ssim.ssim_bwd_inplace.int8.noint64
+[439/1181] Linking CXX executable loma_test.exe
+[440/1181] Linking CXX executable aliked_test.exe
+[441/1181] SPIR-V match_d256
+[442/1181] Linking CXX executable metric3d_test.exe
+[443/1181] SPIR-V match
+[444/1181] Linking CXX executable moge_test.exe
+[445/1181] SPIR-V match_nodot
+[446/1181] SPIR-V match_nodot_d256
+[447/1181] SPIR-V fused_ssim.ssim_bwd_inplace.int8
+[448/1181] SPIR-V sift
+[449/1181] Building CXX object CMakeFiles\nn_ops_test.dir\src\nn\tests\nn_ops_test.cpp.obj
+[450/1181] Linking CXX executable nn_ops_test.exe
+[451/1181] SPIR-V fused_ssim.ssim_bwd_inplace.noint64
+[452/1181] SPIR-V fused_ssim.ssim_bwd_inplace
+[453/1181] SPIR-V fused_ssim.ssim_mask_cov_x.atomicadd.int8
+[454/1181] SPIR-V fused_ssim.ssim_mask_cov_x.atomicadd.int8.noint64
+[455/1181] SPIR-V fused_ssim.ssim_mask_cov_x.atomicadd.noint64
+[456/1181] SPIR-V fused_ssim.ssim_mask_cov_x.atomicadd
+[457/1181] SPIR-V fused_ssim.ssim_mask_cov_x.int8.noint64
+[458/1181] SPIR-V fused_ssim.ssim_mask_cov_x.int8
+[459/1181] SPIR-V fused_ssim.ssim_mask_cov_x.noint64
+[460/1181] SPIR-V fused_ssim.ssim_mask_cov_x
+[461/1181] SPIR-V fused_ssim.ssim_mask_cov_y.atomicadd.int8.noint64
+[462/1181] SPIR-V fused_ssim.ssim_mask_cov_y.atomicadd.int8
+[463/1181] SPIR-V fused_ssim.ssim_mask_cov_y.atomicadd.noint64
+[464/1181] SPIR-V fused_ssim.ssim_mask_cov_y.atomicadd
+[465/1181] Building CXX object CMakeFiles\sam_pipeline_test.dir\src\sam\tests\sam_pipeline_test.cpp.obj
+[466/1181] SPIR-V fused_ssim.ssim_mask_cov_y.int8.noint64
+[467/1181] SPIR-V fused_ssim.ssim_mask_cov_y.int8
+[468/1181] SPIR-V fused_ssim.ssim_mask_cov_y.noint64
+[469/1181] Linking CXX executable sam_pipeline_test.exe
+[470/1181] SPIR-V intersect_tile.intersect_offset.int8.noint64
+[471/1181] SPIR-V fused_ssim.ssim_mask_cov_y
+[472/1181] SPIR-V intersect_tile.intersect_offset.int8
+[473/1181] SPIR-V intersect_tile.intersect_offset.noint64
+[474/1181] SPIR-V intersect_tile.intersect_offset
+[475/1181] SPIR-V intersect_tile.intersect_tile_count.int8.noint64
+[476/1181] SPIR-V intersect_tile.intersect_tile_count.int8
+[477/1181] SPIR-V intersect_tile.intersect_tile_count.noint64
+[478/1181] SPIR-V intersect_tile.intersect_tile_count
+[479/1181] SPIR-V intersect_tile.intersect_tile_write.int8.noint64
+[480/1181] SPIR-V intersect_tile.intersect_tile_write.int8
+[481/1181] SPIR-V intersect_tile.intersect_tile_write.noint64
+[482/1181] SPIR-V intersect_tile.intersect_tile_write
+[483/1181] SPIR-V intersect_tile.tile_active_map.int8.noint64
+[484/1181] SPIR-V intersect_tile.tile_active_map.int8
+[485/1181] SPIR-V intersect_tile.tile_active_map.noint64
+[486/1181] SPIR-V intersect_tile.tile_active_map
+[487/1181] SPIR-V meshing.mesh_activate.noint64
+[488/1181] SPIR-V meshing.mesh_activate
+[489/1181] SPIR-V meshing.mesh_bvh_prep.noint64
+[490/1181] SPIR-V meshing.mesh_bisect.noint64
+[491/1181] SPIR-V meshing.mesh_bisect
+[492/1181] SPIR-V meshing.mesh_bvh_prep
+[493/1181] SPIR-V meshing.mesh_colorize.noint64
+[494/1181] SPIR-V meshing.mesh_colorize
+[495/1181] SPIR-V meshing.mesh_lbvh_aabb.noint64
+[496/1181] SPIR-V meshing.mesh_lbvh_aabb
+[497/1181] SPIR-V meshing.mesh_lbvh_init_aabb
+[498/1181] SPIR-V meshing.mesh_lbvh_init_aabb.noint64
+[499/1181] SPIR-V meshing.mesh_lbvh_internal.noint64
+[500/1181] SPIR-V meshing.mesh_lbvh_unmap_aabb.noint64
+[501/1181] SPIR-V meshing.mesh_lbvh_internal
+[502/1181] SPIR-V meshing.mesh_lbvh_unmap_aabb
+[503/1181] SPIR-V meshing.mesh_occ.noint64
+[504/1181] SPIR-V meshing.mesh_occ_combine.noint64
+[505/1181] SPIR-V meshing.mesh_occ_combine
+[506/1181] SPIR-V meshing.mesh_occ
+[507/1181] SPIR-V meshing.mesh_pointcloud.noint64
+[508/1181] SPIR-V meshing.mesh_pointcloud
+[509/1181] SPIR-V meshing_raster.mesh_finalize_color.noint64
+[510/1181] SPIR-V meshing_raster.mesh_finalize_color
+[511/1181] SPIR-V meshing_raster.mesh_finalize_occ.noint64
+[512/1181] SPIR-V meshing_raster.mesh_cull.noint64
+[513/1181] SPIR-V meshing_raster.mesh_cull
+[514/1181] SPIR-V meshing_raster.mesh_finalize_occ
+[515/1181] SPIR-V meshing_raster.mesh_sample_color.noint64
+[516/1181] SPIR-V meshing_raster.mesh_sample_color
+[517/1181] SPIR-V meshing_raster.mesh_sample_occ.noint64
+[518/1181] SPIR-V meshing_raster.mesh_sample_occ
+[519/1181] SPIR-V meshing_raster.mesh_sample_view_density.noint64
+[520/1181] SPIR-V meshing_raster.mesh_sample_view_density
+[521/1181] SPIR-V meshing_raster.mesh_tri_prep.noint64
+[522/1181] SPIR-V multi_scale_loss.ms_add_scaled.atomicadd.int8.noint64
+[523/1181] SPIR-V multi_scale_loss.ms_add_scaled.atomicadd.int8
+[524/1181] SPIR-V meshing_raster.mesh_tri_prep
+[525/1181] SPIR-V multi_scale_loss.ms_add_scaled.atomicadd.noint64
+[526/1181] SPIR-V multi_scale_loss.ms_add_scaled.int8.noint64
+[527/1181] SPIR-V multi_scale_loss.ms_add_scaled.atomicadd
+[528/1181] SPIR-V multi_scale_loss.ms_add_scaled.int8
+[529/1181] SPIR-V multi_scale_loss.ms_add_scaled.noint64
+[530/1181] SPIR-V multi_scale_loss.ms_downsample_b.atomicadd.int8.noint64
+[531/1181] SPIR-V multi_scale_loss.ms_add_scaled
+[532/1181] SPIR-V multi_scale_loss.ms_downsample_b.atomicadd.int8
+[533/1181] SPIR-V multi_scale_loss.ms_downsample_b.atomicadd.noint64
+[534/1181] SPIR-V multi_scale_loss.ms_downsample_b.atomicadd
+[535/1181] SPIR-V multi_scale_loss.ms_downsample_b.int8.noint64
+[536/1181] SPIR-V multi_scale_loss.ms_downsample_b.int8
+[537/1181] SPIR-V multi_scale_loss.ms_downsample_b.noint64
+[538/1181] SPIR-V multi_scale_loss.ms_downsample_b
+[539/1181] SPIR-V multi_scale_loss.ms_downsample_f.atomicadd.int8.noint64
+[540/1181] SPIR-V multi_scale_loss.ms_downsample_f.atomicadd.int8
+[541/1181] SPIR-V multi_scale_loss.ms_downsample_f.atomicadd.noint64
+[542/1181] SPIR-V multi_scale_loss.ms_downsample_f.atomicadd
+[543/1181] SPIR-V multi_scale_loss.ms_downsample_f.int8.noint64
+[544/1181] SPIR-V multi_scale_loss.ms_downsample_f.int8
+[545/1181] SPIR-V multi_scale_loss.ms_downsample_f.noint64
+[546/1181] SPIR-V multi_scale_loss.ms_downsample_f
+[547/1181] SPIR-V multi_scale_loss.ms_downsample_gt_geo.atomicadd.int8.noint64
+[548/1181] SPIR-V multi_scale_loss.ms_downsample_gt_geo.atomicadd.int8
+[549/1181] SPIR-V multi_scale_loss.ms_downsample_gt_geo.atomicadd.noint64
+[550/1181] SPIR-V multi_scale_loss.ms_downsample_gt_geo.atomicadd
+[551/1181] SPIR-V multi_scale_loss.ms_downsample_gt_geo.int8.noint64
+[552/1181] SPIR-V multi_scale_loss.ms_downsample_gt_geo.int8
+[553/1181] SPIR-V multi_scale_loss.ms_downsample_gt_geo.noint64
+[554/1181] SPIR-V multi_scale_loss.ms_downsample_gt_geo
+[555/1181] SPIR-V multi_scale_loss.ms_downsample_masked_f.atomicadd.int8.noint64
+[556/1181] SPIR-V multi_scale_loss.ms_downsample_masked_f.atomicadd.int8
+[557/1181] SPIR-V multi_scale_loss.ms_downsample_masked_f.atomicadd.noint64
+[558/1181] SPIR-V multi_scale_loss.ms_downsample_masked_f.atomicadd
+[559/1181] SPIR-V multi_scale_loss.ms_downsample_masked_f.int8.noint64
+[560/1181] SPIR-V multi_scale_loss.ms_downsample_masked_f.int8
+[561/1181] SPIR-V multi_scale_loss.ms_downsample_masked_f.noint64
+[562/1181] SPIR-V multi_scale_loss.ms_downsample_masked_f
+[563/1181] SPIR-V multi_scale_loss.ms_nms_apply.atomicadd.int8.noint64
+[564/1181] SPIR-V multi_scale_loss.ms_nms_apply.atomicadd.int8
+[565/1181] SPIR-V multi_scale_loss.ms_nms_apply.atomicadd.noint64
+[566/1181] SPIR-V multi_scale_loss.ms_nms_apply.atomicadd
+[567/1181] SPIR-V multi_scale_loss.ms_nms_apply.int8.noint64
+[568/1181] SPIR-V multi_scale_loss.ms_nms_apply.int8
+[569/1181] SPIR-V multi_scale_loss.ms_nms_apply.noint64
+[570/1181] SPIR-V multi_scale_loss.ms_nms_apply
+[571/1181] SPIR-V multi_scale_loss.ms_nms_mask.atomicadd.int8.noint64
+[572/1181] SPIR-V multi_scale_loss.ms_nms_mask.atomicadd.int8
+[573/1181] SPIR-V multi_scale_loss.ms_nms_mask.atomicadd.noint64
+[574/1181] SPIR-V multi_scale_loss.ms_nms_mask.atomicadd
+[575/1181] SPIR-V multi_scale_loss.ms_nms_mask.int8.noint64
+[576/1181] SPIR-V multi_scale_loss.ms_nms_mask.int8
+[577/1181] SPIR-V multi_scale_loss.ms_nms_mask.noint64
+[578/1181] SPIR-V ba_float_cauchy
+[579/1181] SPIR-V multi_scale_loss.ms_nms_mask
+[580/1181] SPIR-V multi_scale_loss.ms_upsample_f.atomicadd.int8.noint64
+[581/1181] SPIR-V multi_scale_loss.ms_upsample_f.atomicadd.int8
+[582/1181] SPIR-V multi_scale_loss.ms_upsample_f.atomicadd.noint64
+[583/1181] SPIR-V ba_float_trivial
+[584/1181] SPIR-V multi_scale_loss.ms_upsample_f.atomicadd
+[585/1181] SPIR-V multi_scale_loss.ms_upsample_f.int8.noint64
+[586/1181] SPIR-V multi_scale_loss.ms_upsample_f.int8
+[587/1181] SPIR-V multi_scale_loss.ms_upsample_f.noint64
+[588/1181] SPIR-V multi_scale_loss.ms_upsample_f
+[589/1181] SPIR-V multi_scale_loss.ms_zero_masked_grad.atomicadd.int8.noint64
+[590/1181] SPIR-V multi_scale_loss.ms_zero_masked_grad.atomicadd.int8
+[591/1181] SPIR-V ba_float_huber
+[592/1181] SPIR-V multi_scale_loss.ms_zero_masked_grad.atomicadd.noint64
+[593/1181] SPIR-V multi_scale_loss.ms_zero_masked_grad.atomicadd
+[594/1181] SPIR-V multi_scale_loss.ms_zero_masked_grad.int8.noint64
+[595/1181] SPIR-V multi_scale_loss.ms_zero_masked_grad.int8
+[596/1181] SPIR-V multi_scale_loss.ms_zero_masked_grad.noint64
+[597/1181] SPIR-V multi_scale_loss.ms_zero_masked_grad
+[598/1181] SPIR-V multi_scale_loss.ppl_bwd.atomicadd.int8.noint64
+[599/1181] SPIR-V multi_scale_loss.ppl_bwd.atomicadd.noint64
+[600/1181] SPIR-V multi_scale_loss.ppl_bwd.atomicadd.int8
+[601/1181] SPIR-V multi_scale_loss.ppl_bwd.atomicadd
+[602/1181] SPIR-V multi_scale_loss.ppl_bwd.int8.noint64
+[603/1181] SPIR-V multi_scale_loss.ppl_fwd.atomicadd.int8.noint64
+[604/1181] SPIR-V ba_double_trivial
+[605/1181] SPIR-V multi_scale_loss.ppl_fwd.atomicadd.int8
+[606/1181] SPIR-V multi_scale_loss.ppl_bwd.int8
+[607/1181] SPIR-V multi_scale_loss.ppl_bwd.noint64
+[608/1181] SPIR-V multi_scale_loss.ppl_bwd
+[609/1181] SPIR-V ba_double_cauchy
+[610/1181] SPIR-V multi_scale_loss.ppl_fwd.atomicadd.noint64
+[611/1181] SPIR-V ba_double_huber
+[612/1181] SPIR-V multi_scale_loss.ppl_fwd.atomicadd
+[613/1181] SPIR-V multi_scale_loss.ppl_fwd.int8.noint64
+[614/1181] SPIR-V multi_scale_loss.ppl_fwd.int8
+[615/1181] SPIR-V multi_scale_loss.ppl_fwd.noint64
+[616/1181] SPIR-V multi_scale_loss.ppl_fwd
+[617/1181] SPIR-V multi_scale_loss.ppl_reduce_bwd.atomicadd.int8.noint64
+[618/1181] SPIR-V multi_scale_loss.ppl_reduce_bwd.atomicadd.int8
+[619/1181] SPIR-V multi_scale_loss.ppl_reduce_bwd.atomicadd.noint64
+[620/1181] SPIR-V multi_scale_loss.ppl_reduce_bwd.atomicadd
+[621/1181] Embedding SfM SPIR-V (11 blobs)
+[622/1181] SPIR-V multi_scale_loss.ppl_reduce_bwd.int8.noint64
+[623/1181] SPIR-V multi_scale_loss.ppl_reduce_bwd.int8
+[624/1181] SPIR-V multi_scale_loss.ppl_reduce_bwd.noint64
+[625/1181] SPIR-V multi_scale_loss.ppl_reduce_fwd.atomicadd.int8.noint64
+[626/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\external\stb_image_write_impl.cpp.obj
+[627/1181] SPIR-V multi_scale_loss.ppl_reduce_bwd
+[628/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\external\stb_image_impl.cpp.obj
+[629/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\sfm\core\Events.cpp.obj
+[630/1181] Building C object CMakeFiles\ss_sfm.dir\src\external\miniz.c.obj
+[631/1181] SPIR-V multi_scale_loss.ppl_reduce_fwd.atomicadd.int8
+[632/1181] SPIR-V multi_scale_loss.ppl_reduce_fwd.atomicadd.noint64
+[633/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\sfm\core\Log.cpp.obj
+[634/1181] SPIR-V multi_scale_loss.ppl_reduce_fwd.atomicadd
+[635/1181] SPIR-V multi_scale_loss.ppl_reduce_fwd.int8
+[636/1181] SPIR-V multi_scale_loss.ppl_reduce_fwd.int8.noint64
+[637/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\sfm\core\Image.cpp.obj
+[638/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\sfm\core\Resume.cpp.obj
+[639/1181] SPIR-V multi_scale_loss.ppl_reduce_fwd.noint64
+[640/1181] SPIR-V multi_scale_loss.ppl_reduce_fwd
+[641/1181] Building CXX object CMakeFiles\ss_sfm.dir\sfm_shaders_embedded.cpp.obj
+[642/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\sfm\core\Telemetry.cpp.obj
+[643/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\core\ExrImage.cpp.obj
+[644/1181] SPIR-V optim_color.fused_adamtr_rgb
+[645/1181] Building CXX object CMakeFiles\sfm_live_matches_test.dir\src\sfm\tests\sfm_live_matches_test.cpp.obj
+[646/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\sfm\core\Progress.cpp.obj
+[647/1181] SPIR-V optim_color.fused_adamtr_rgb_sh
+[648/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\sfm\feature\Extractor.cpp.obj
+[649/1181] Building CXX object CMakeFiles\sfm_exif_test.dir\src\sfm\tests\sfm_exif_test.cpp.obj
+[650/1181] Building CXX object CMakeFiles\sfm_feature_compaction_test.dir\src\sfm\tests\sfm_feature_compaction_test.cpp.obj
+[651/1181] Building CXX object CMakeFiles\sfm_ba_cpu_test.dir\src\sfm\tests\sfm_ba_cpu_test.cpp.obj
+[652/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\sfm\feature\LearnedMatcher.cpp.obj
+[653/1181] SPIR-V optimizer.float_add.int8.noint64
+[654/1181] Building CXX object CMakeFiles\sfm_mask_test.dir\src\sfm\tests\sfm_mask_test.cpp.obj
+[655/1181] Building CXX object CMakeFiles\sfm_cholesky_test.dir\src\sfm\tests\sfm_cholesky_test.cpp.obj
+[656/1181] Building CXX object CMakeFiles\sfm_telemetry_test.dir\src\sfm\tests\sfm_telemetry_test.cpp.obj
+[657/1181] SPIR-V optim_geometry.fused_optim_3dgs_geometry.int8
+[658/1181] SPIR-V optim_geometry.fused_optim_3dgs_geometry.int8.noint64
+[659/1181] Building CXX object CMakeFiles\sfm_equirect_seam_test.dir\src\sfm\tests\sfm_equirect_seam_test.cpp.obj
+[660/1181] SPIR-V optimizer.float_add.int8
+[661/1181] SPIR-V optim_geometry.fused_optim_3dgs_geometry.noint64
+[662/1181] SPIR-V optimizer.float_add.noint64
+[663/1181] SPIR-V optim_geometry.fused_optim_3dgs_geometry
+[664/1181] SPIR-V optimizer.float_add
+[665/1181] SPIR-V optimizer.float_max.int8.noint64
+[666/1181] SPIR-V optimizer.float_max.int8
+[667/1181] SPIR-V optimizer.float_max.noint64
+[668/1181] SPIR-V optimizer.float_max
+[669/1181] Building CXX object CMakeFiles\sfm_geometry_test.dir\src\sfm\tests\sfm_geometry_test.cpp.obj
+[670/1181] SPIR-V optimizer.fused_adagrad_fwd.int8.noint64
+[671/1181] SPIR-V optimizer.fused_adagrad_fwd.int8
+[672/1181] SPIR-V optimizer.fused_adagrad_fwd.noint64
+[673/1181] SPIR-V optimizer.fused_adagrad_fwd
+[674/1181] SPIR-V optimizer.fused_adam_fwd.int8.noint64
+[675/1181] SPIR-V optimizer.fused_adam_fwd.int8
+[676/1181] SPIR-V optimizer.fused_adam_fwd.noint64
+[677/1181] Building CXX object CMakeFiles\sfm_sensor_gauge_test.dir\src\sfm\tests\sfm_sensor_gauge_test.cpp.obj
+[678/1181] SPIR-V optimizer.fused_adam_fwd
+[679/1181] SPIR-V optimizer.fused_adam_q.int8.noint64
+[680/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\sfm\core\Manifest.cpp.obj
+[681/1181] SPIR-V optimizer.fused_adam_q.int8
+[682/1181] SPIR-V optimizer.fused_adam_q.noint64
+[683/1181] Building CXX object CMakeFiles\sfm_metric_test.dir\src\sfm\tests\sfm_metric_test.cpp.obj
+[684/1181] SPIR-V optimizer.fused_adam_q
+[685/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\sfm\SfmConfig.cpp.obj
+[686/1181] Building CXX object CMakeFiles\sfm_sift_test.dir\src\sfm\tests\sfm_sift_test.cpp.obj
+[687/1181] SPIR-V optimizer.increment_i32.int8.noint64
+[688/1181] Building CXX object CMakeFiles\sfm_resume_test.dir\src\sfm\tests\sfm_resume_test.cpp.obj
+[689/1181] SPIR-V optimizer.fused_adam_qq.int8
+[690/1181] SPIR-V optimizer.fused_adam_qq.noint64
+[691/1181] SPIR-V optimizer.increment_i32.int8
+[692/1181] SPIR-V optimizer.fused_adam_qq.int8.noint64
+[693/1181] Building CXX object CMakeFiles\sfm_merge_test.dir\src\sfm\tests\sfm_merge_test.cpp.obj
+[694/1181] SPIR-V optimizer.fused_adam_qq
+[695/1181] Building CXX object CMakeFiles\sfm_manifest_test.dir\src\sfm\tests\sfm_manifest_test.cpp.obj
+[696/1181] SPIR-V optimizer.increment_i32.noint64
+[697/1181] SPIR-V optimizer.increment_i32
+[698/1181] SPIR-V pixel_wise_render.blend_background_fwd.noint64
+[699/1181] SPIR-V pixel_wise_render.blend_background_fwd
+[700/1181] SPIR-V pixel_wise_render.blend_background_noise_fwd.noint64
+[701/1181] SPIR-V pixel_wise_render.blend_background_noise_fwd
+[702/1181] SPIR-V pixel_wise_render.depth_to_normal_fwd.noint64
+[703/1181] SPIR-V pixel_wise_render.working_to_display_fwd.noint64
+[704/1181] SPIR-V pixel_wise_render.depth_to_normal_fwd
+[705/1181] SPIR-V pixel_wise_render.working_to_display_fwd
+[706/1181] SPIR-V pixel_wise_train.blend_bg_bwd.atomicadd.noint64
+[707/1181] SPIR-V pixel_wise_train.blend_bg_bwd.atomicadd
+[708/1181] SPIR-V pixel_wise_train.blend_bg_bwd.noint64
+[709/1181] SPIR-V pixel_wise_train.blend_bg_bwd
+[710/1181] SPIR-V pixel_wise_train.blend_bg_noise_bwd.atomicadd.noint64
+[711/1181] SPIR-V pixel_wise_train.blend_bg_noise_bwd.atomicadd
+[712/1181] SPIR-V pixel_wise_train.blend_bg_noise_bwd.noint64
+[713/1181] SPIR-V pixel_wise_train.color_shift_inject.atomicadd.noint64
+[714/1181] SPIR-V pixel_wise_train.blend_bg_noise_bwd
+[715/1181] SPIR-V pixel_wise_train.color_shift_inject.atomicadd
+[716/1181] SPIR-V pixel_wise_train.color_shift_inject.noint64
+[717/1181] SPIR-V pixel_wise_train.color_shift_inject
+[718/1181] SPIR-V pixel_wise_train.color_shift_update.atomicadd.noint64
+[719/1181] SPIR-V pixel_wise_train.color_shift_update.atomicadd
+[720/1181] Building CXX object CMakeFiles\sfm_rig_test.dir\src\sfm\tests\sfm_rig_test.cpp.obj
+[721/1181] SPIR-V pixel_wise_train.color_shift_update.noint64
+[722/1181] SPIR-V pixel_wise_train.color_shift_update
+[723/1181] SPIR-V pixel_wise_train.d2n_bwd.atomicadd.noint64
+[724/1181] SPIR-V pixel_wise_train.d2n_bwd.atomicadd
+[725/1181] SPIR-V pixel_wise_train.d2n_bwd.noint64
+[726/1181] SPIR-V pixel_wise_train.lin_to_ray_depth.atomicadd.noint64
+[727/1181] SPIR-V pixel_wise_train.d2n_bwd
+[728/1181] SPIR-V pixel_wise_train.lin_to_ray_depth.atomicadd
+[729/1181] SPIR-V pixel_wise_train.lin_to_ray_depth.noint64
+[730/1181] SPIR-V pixel_wise_train.lin_to_ray_depth
+[731/1181] SPIR-V pixel_wise_train.overexposure_add.atomicadd.noint64
+[732/1181] SPIR-V pixel_wise_train.overexposure_add.atomicadd
+[733/1181] SPIR-V pixel_wise_train.overexposure_add.noint64
+[734/1181] SPIR-V pixel_wise_train.overexposure_add
+[735/1181] Building CXX object CMakeFiles\ss_sfm.dir\src\sfm\Pipeline.cpp.obj
+[736/1181] SPIR-V pixel_wise_train.working_to_display_bwd_k.atomicadd.noint64
+[737/1181] Linking CXX static library ss_sfm.lib
+[738/1181] SPIR-V pixel_wise_train.working_to_display_bwd_k.atomicadd
+[739/1181] SPIR-V pixel_wise_train.working_to_display_bwd_k.noint64
+[740/1181] Linking CXX executable sfm_ba_cpu_test.exe
+[741/1181] Linking CXX executable sfm_cholesky_test.exe
+[742/1181] Linking CXX executable sfm_feature_compaction_test.exe
+[743/1181] Linking CXX executable sfm_exif_test.exe
+[744/1181] Linking CXX executable sfm_equirect_seam_test.exe
+[745/1181] Linking CXX executable sfm_geometry_test.exe
+[746/1181] Linking CXX executable sfm_live_matches_test.exe
+[747/1181] Linking CXX executable sfm_manifest_test.exe
+[748/1181] Linking CXX executable sfm_mask_test.exe
+[749/1181] Linking CXX executable sfm_merge_test.exe
+[750/1181] Linking CXX executable sfm_metric_test.exe
+[751/1181] Linking CXX executable sfm_telemetry_test.exe
+[752/1181] Linking CXX executable sfm_sensor_gauge_test.exe
+[753/1181] Linking CXX executable sfm_rig_test.exe
+[754/1181] Linking CXX executable sfm_resume_test.exe
+[755/1181] Linking CXX executable sfm_sift_test.exe
+[756/1181] Building CXX object CMakeFiles\sfm_map_test.dir\src\sfm\tests\sfm_map_test.cpp.obj
+[757/1181] SPIR-V pixel_wise_train.working_to_display_bwd_k
+[758/1181] Linking CXX executable sfm_map_test.exe
+[759/1181] SPIR-V ppisp_image.ppisp_image_fwd
+[760/1181] SPIR-V ppisp_image.ppisp_image_fwd.atomicadd
+[761/1181] SPIR-V ppisp_image.ppisp_reg_final_bwd.atomicadd
+[762/1181] SPIR-V ppisp_image.ppisp_reg_final_fwd.atomicadd
+[763/1181] SPIR-V ppisp_image.ppisp_reg_final_bwd
+[764/1181] SPIR-V ppisp_image.ppisp_reg_final_fwd
+[765/1181] SPIR-V ppisp_image.ppisp_image_bwd.atomicadd
+[766/1181] SPIR-V ppisp_image.ppisp_image_bwd
+[767/1181] SPIR-V ppisp_image.ppisp_reg_raw_fwd.atomicadd
+[768/1181] SPIR-V ppisp_image.ppisp_reg_raw_fwd
+[769/1181] SPIR-V ppisp_image.ppisp_reg_raw_bwd.atomicadd
+[770/1181] SPIR-V ppisp_image.ppisp_reg_raw_bwd
+[771/1181] SPIR-V fpbo.fpbo.atomicadd.noint64
+[772/1181] SPIR-V fpbo.fpbo.noint64
+[773/1181] SPIR-V fpbo.fpbo.int8
+[774/1181] SPIR-V fpbo.fpbo.int8.noint64
+[775/1181] SPIR-V fpbo.fpbo.atomicadd.int8
+[776/1181] SPIR-V fpbo.fpbo
+[777/1181] SPIR-V fpbo.fpbo.atomicadd.int8.noint64
+[778/1181] SPIR-V fpbo.fpbo.atomicadd
+[779/1181] SPIR-V projection_bwd.projection_bwd_3dgs.atomicadd.int8.noint64
+[780/1181] SPIR-V projection_bwd.projection_bwd_3dgs.atomicadd
+[781/1181] SPIR-V projection_bwd.projection_bwd_3dgut.atomicadd.int8
+[782/1181] SPIR-V projection_bwd.projection_bwd_3dgs.atomicadd.int8
+[783/1181] SPIR-V projection_bwd.projection_bwd_3dgut.atomicadd.int8.noint64
+[784/1181] SPIR-V projection_bwd.projection_bwd_3dgut.atomicadd
+[785/1181] SPIR-V projection_bwd.projection_bwd_3dgs.atomicadd.noint64
+[786/1181] SPIR-V projection_bwd.projection_bwd_3dgut.atomicadd.noint64
+[787/1181] SPIR-V projection_bwd.projection_bwd_3dgut.int8.noint64
+[788/1181] SPIR-V projection_fwd.projection_fwd_3dgs.noint64
+[789/1181] SPIR-V projection_bwd.projection_bwd_3dgs.int8
+[790/1181] SPIR-V projection_fwd.projection_fwd_3dgs.int8.noint64
+[791/1181] SPIR-V projection_bwd.projection_bwd_3dgs.int8.noint64
+[792/1181] SPIR-V projection_bwd.projection_bwd_3dgs.noint64
+[793/1181] SPIR-V projection_fwd.projection_fwd_3dgs.int8
+[794/1181] SPIR-V projection_fwd.projection_fwd_3dgs
+[795/1181] SPIR-V projection_fwd.projection_fwd_3dgut.int8.noint64
+[796/1181] SPIR-V projection_bwd.projection_bwd_3dgs
+[797/1181] SPIR-V projection_fwd.projection_packed_mask.int8.noint64
+[798/1181] SPIR-V projection_fwd.projection_packed_mask.int8
+[799/1181] SPIR-V projection_fwd.projection_packed_mask.noint64
+[800/1181] SPIR-V projection_fwd.projection_fwd_3dgut.noint64
+[801/1181] SPIR-V projection_fwd.projection_fwd_3dgut.int8
+[802/1181] SPIR-V projection_fwd.projection_fwd_3dgut
+[803/1181] SPIR-V projection_fwd.projection_packed_mask
+[804/1181] SPIR-V projection_bwd.projection_bwd_3dgut.noint64
+[805/1181] SPIR-V projection_bwd.projection_bwd_3dgut
+[806/1181] SPIR-V projection_bwd.projection_bwd_3dgut.int8
+[807/1181] SPIR-V projection_qgrad.qgrad_camera_id_bounds.atomicadd.int8.noint64
+[808/1181] SPIR-V projection_qgrad.qgrad_camera_id_bounds.atomicadd.int8
+[809/1181] SPIR-V projection_qgrad.qgrad_camera_id_bounds.atomicadd.noint64
+[810/1181] SPIR-V projection_qgrad.qgrad_camera_id_bounds.atomicadd
+[811/1181] SPIR-V projection_fwd.projection_packed_fwd.int8.noint64
+[812/1181] SPIR-V projection_qgrad.qgrad_camera_id_bounds.int8.noint64
+[813/1181] SPIR-V projection_qgrad.qgrad_camera_id_bounds.int8
+[814/1181] SPIR-V projection_qgrad.qgrad_camera_id_bounds.noint64
+[815/1181] SPIR-V projection_qgrad.qgrad_camera_id_bounds
+[816/1181] SPIR-V projection_fwd.projection_packed_fwd.noint64
+[817/1181] SPIR-V projection_qgrad.qgrad_iota.atomicadd.int8.noint64
+[818/1181] SPIR-V projection_qgrad.qgrad_iota.atomicadd.int8
+[819/1181] SPIR-V projection_qgrad.qgrad_iota.atomicadd.noint64
+[820/1181] SPIR-V projection_qgrad.qgrad_iota.atomicadd
+[821/1181] SPIR-V projection_qgrad.qgrad_iota.int8
+[822/1181] SPIR-V projection_qgrad.qgrad_iota.int8.noint64
+[823/1181] SPIR-V quantile.qt_find_row_max.noint64
+[824/1181] SPIR-V projection_qgrad.qgrad_iota.noint64
+[825/1181] SPIR-V projection_fwd.projection_packed_fwd.int8
+[826/1181] SPIR-V quantile.qt_find_row_max
+[827/1181] SPIR-V projection_qgrad.qgrad_iota
+[828/1181] SPIR-V quantile.qt_hist_pass.noint64
+[829/1181] SPIR-V quantile.qt_hist_pass
+[830/1181] SPIR-V quantile.qt_select_pass.noint64
+[831/1181] SPIR-V quantile.qt_select_pass
+[832/1181] SPIR-V rasterize_bwd.rasterize_bwd_2d.atomicadd.noint64
+[833/1181] SPIR-V rasterize_bwd.rasterize_bwd_2d.atomicadd
+[834/1181] SPIR-V projection_fwd.projection_packed_fwd
+[835/1181] SPIR-V rasterize_bwd.rasterize_bwd_2d.noint64
+[836/1181] SPIR-V rasterize_bwd.rasterize_bwd_2d
+[837/1181] SPIR-V rasterize_fwd.rasterize_fwd_2d.noint64
+[838/1181] SPIR-V rasterize_bwd.rasterize_bwd_3dgut.atomicadd.noint64
+[839/1181] SPIR-V rasterize_bwd.rasterize_bwd_3dgut.atomicadd
+[840/1181] SPIR-V rasterize_fwd.rasterize_fwd_2d
+[841/1181] SPIR-V rasterize_bwd.rasterize_bwd_3dgut.noint64
+[842/1181] SPIR-V rasterize_bwd.rasterize_bwd_3dgut
+[843/1181] SPIR-V sort_scan.scan_add_f32.int8.noint64
+[844/1181] SPIR-V rasterize_fwd.rasterize_fwd_3dgut.noint64
+[845/1181] SPIR-V rasterize_fwd.rasterize_fwd_3dgut
+[846/1181] SPIR-V sort_scan.scan_add_f32.int8
+[847/1181] SPIR-V rasterize_moments.rasterize_moments_3dgut.noint64
+[848/1181] SPIR-V rasterize_moments.rasterize_moments_3dgut
+[849/1181] SPIR-V sort_scan.scan_add_f32.noint64
+[850/1181] SPIR-V sort_scan.scan_add_f32
+[851/1181] SPIR-V sort_scan.scan_add_i32.int8.noint64
+[852/1181] SPIR-V sort_scan.scan_add_i32.int8
+[853/1181] SPIR-V sort_scan.scan_add_i32.noint64
+[854/1181] SPIR-V sort_scan.scan_add_i32
+[855/1181] SPIR-V sort_scan.scan_add_i64.int8.noint64
+[856/1181] SPIR-V sort_scan.scan_add_i64.int8
+[857/1181] SPIR-V sort_scan.scan_add_i64.noint64
+[858/1181] SPIR-V sort_scan.scan_add_i64
+[859/1181] SPIR-V sort_scan.scan_blocks_f32.int8.noint64
+[860/1181] SPIR-V sort_scan.scan_blocks_f32.int8
+[861/1181] SPIR-V sort_scan.scan_blocks_f32.noint64
+[862/1181] SPIR-V sort_scan.scan_blocks_flags.int8.noint64
+[863/1181] SPIR-V sort_scan.scan_blocks_f32
+[864/1181] SPIR-V sort_scan.scan_blocks_flags.int8
+[865/1181] SPIR-V sort_scan.scan_blocks_flags.noint64
+[866/1181] SPIR-V sort_scan.scan_blocks_flags
+[867/1181] SPIR-V sort_scan.scan_blocks_i32.int8.noint64
+[868/1181] SPIR-V sort_scan.scan_blocks_i32.int8
+[869/1181] SPIR-V sort_scan.scan_blocks_i32.noint64
+[870/1181] SPIR-V sort_scan.scan_blocks_i32
+[871/1181] SPIR-V sort_scan.scan_blocks_i64.int8.noint64
+[872/1181] SPIR-V sort_scan.scan_blocks_i64.int8
+[873/1181] SPIR-V sort_scan.scan_blocks_i64.noint64
+[874/1181] SPIR-V sort_scan.scan_blocks_i64
+[875/1181] SPIR-V sort_scan.scan_spine_f32.int8.noint64
+[876/1181] SPIR-V sort_scan.scan_spine_f32.int8
+[877/1181] SPIR-V sort_scan.scan_spine_f32.noint64
+[878/1181] SPIR-V sort_scan.scan_spine_f32
+[879/1181] SPIR-V sort_scan.scan_spine_i32.int8.noint64
+[880/1181] SPIR-V sort_scan.scan_spine_i32.int8
+[881/1181] SPIR-V sort_scan.scan_spine_i32.noint64
+[882/1181] SPIR-V sort_scan.scan_spine_i32
+[883/1181] SPIR-V sort_scan.scan_spine_i64.int8.noint64
+[884/1181] SPIR-V sort_scan.scan_spine_i64.int8
+[885/1181] SPIR-V sort_scan.scan_spine_i64.noint64
+[886/1181] SPIR-V sort_scan.scan_spine_i64
+[887/1181] SPIR-V sort_scan.scatter_flagged_u32.int8.noint64
+[888/1181] SPIR-V sort_scan.scatter_flagged_u32.int8
+[889/1181] SPIR-V sort_scan.scatter_flagged_u32.noint64
+[890/1181] SPIR-V sort_scan.scatter_flagged_u32
+[891/1181] SPIR-V sort_scan.sort_downsweep_u32.int8.noint64
+[892/1181] SPIR-V sort_scan.sort_downsweep_u32.noint64
+[893/1181] SPIR-V sort_scan.sort_downsweep_u32.int8
+[894/1181] SPIR-V sort_scan.sort_downsweep_u32
+[895/1181] SPIR-V sort_scan.sort_downsweep_u64.int8
+[896/1181] SPIR-V sort_scan.sort_downsweep_u64.int8.noint64
+[897/1181] SPIR-V sort_scan.sort_downsweep_u64.noint64
+[898/1181] SPIR-V sort_scan.sort_downsweep_u64
+[899/1181] SPIR-V sort_scan.sort_hist_u32.int8.noint64
+[900/1181] SPIR-V sort_scan.sort_hist_u32.int8
+[901/1181] SPIR-V sort_scan.sort_hist_u32.noint64
+[902/1181] SPIR-V sort_scan.sort_hist_u32
+[903/1181] SPIR-V sort_scan.sort_hist_u64.int8.noint64
+[904/1181] SPIR-V sort_scan.sort_hist_u64.int8
+[905/1181] SPIR-V sort_scan.sort_hist_u64
+[906/1181] SPIR-V sort_scan.sort_hist_u64.noint64
+[907/1181] SPIR-V sort_scan.sort_spine_global.int8.noint64
+[908/1181] SPIR-V sort_scan.sort_spine_global.int8
+[909/1181] SPIR-V sort_scan.sort_spine_global.noint64
+[910/1181] SPIR-V sort_scan.sort_spine_global
+[911/1181] SPIR-V sort_scan.sort_spine_local.int8.noint64
+[912/1181] SPIR-V sort_scan.sort_spine_local.int8
+[913/1181] SPIR-V sort_scan.sort_spine_local.noint64
+[914/1181] SPIR-V test_kernels.iota_u32
+[915/1181] SPIR-V test_kernels.saxpy
+[916/1181] SPIR-V sort_scan.sort_spine_local
+[917/1181] SPIR-V visualizer.vis_compute_aabb.int8.noint64
+[918/1181] SPIR-V visualizer.vis_blit.int8.noint64
+[919/1181] SPIR-V visualizer.vis_blit.int8
+[920/1181] SPIR-V visualizer.vis_blit
+[921/1181] SPIR-V visualizer.vis_blit.noint64
+[922/1181] SPIR-V visualizer.vis_compute_aabb.int8
+[923/1181] SPIR-V visualizer.vis_compute_aabb.noint64
+[924/1181] SPIR-V visualizer.vis_compute_aabb
+[925/1181] SPIR-V visualizer.vis_fill_identity.int8.noint64
+[926/1181] SPIR-V visualizer.vis_fill_frustum.int8
+[927/1181] SPIR-V visualizer.vis_fill_identity.int8
+[928/1181] SPIR-V visualizer.vis_fill_frustum.int8.noint64
+[929/1181] SPIR-V visualizer.vis_fill_frustum.noint64
+[930/1181] SPIR-V visualizer.vis_fill_frustum
+[931/1181] SPIR-V visualizer.vis_fill_identity
+[932/1181] SPIR-V visualizer.vis_fill_identity.noint64
+[933/1181] SPIR-V visualizer.vis_fill_morton.int8.noint64
+[934/1181] SPIR-V visualizer.vis_fill_morton.int8
+[935/1181] SPIR-V visualizer.vis_fill_morton.noint64
+[936/1181] SPIR-V visualizer.vis_fill_morton
+[937/1181] SPIR-V visualizer.vis_lbvh_aabb.int8.noint64
+[938/1181] SPIR-V visualizer.vis_lbvh_aabb.int8
+[939/1181] SPIR-V visualizer.vis_lbvh_aabb.noint64
+[940/1181] SPIR-V visualizer.vis_lbvh_aabb
+[941/1181] SPIR-V visualizer.vis_lbvh_nodes.int8.noint64
+[942/1181] SPIR-V visualizer.vis_lbvh_nodes.int8
+[943/1181] SPIR-V visualizer.vis_lbvh_nodes.noint64
+[944/1181] SPIR-V visualizer.vis_lbvh_nodes
+[945/1181] SPIR-V visualizer.vis_min_max.int8.noint64
+[946/1181] SPIR-V visualizer.vis_min_max.noint64
+[947/1181] SPIR-V visualizer.vis_min_max.int8
+[948/1181] SPIR-V visualizer.vis_min_max
+[949/1181] SPIR-V visualizer.vis_pack_rgb8.int8.noint64
+[950/1181] SPIR-V visualizer.vis_pack_rgb8.int8
+[951/1181] SPIR-V visualizer.vis_pack_rgb8.noint64
+[952/1181] SPIR-V visualizer.vis_pack_rgb8
+[953/1181] SPIR-V visualizer.vis_tree_init_aabb.int8.noint64
+[954/1181] SPIR-V visualizer.vis_tree_init_aabb.int8
+[955/1181] SPIR-V visualizer.vis_tree_init_aabb.noint64
+[956/1181] SPIR-V visualizer.vis_tree_init_aabb
+[957/1181] SPIR-V visualizer.vis_unmap_aabb.int8.noint64
+[958/1181] SPIR-V visualizer.vis_unmap_aabb.int8
+[959/1181] SPIR-V visualizer.vis_unmap_aabb.noint64
+[960/1181] SPIR-V visualizer.vis_unmap_aabb
+[961/1181] SPIR-V visualizer.vis_update_thumbnails.int8.noint64
+[962/1181] SPIR-V visualizer.vis_update_thumbnails.int8
+[963/1181] SPIR-V visualizer.vis_update_thumbnails.noint64
+[964/1181] SPIR-V warp.bytes_to_float.int8.noint64
+[965/1181] SPIR-V visualizer.vis_update_thumbnails
+[966/1181] SPIR-V warp.bytes_to_float.int8
+[967/1181] SPIR-V warp.bytes_to_float.noint64
+[968/1181] SPIR-V warp.bytes_to_float
+[969/1181] SPIR-V warp.redistort_depth.int8.noint64
+[970/1181] SPIR-V warp.redistort_depth.int8
+[971/1181] SPIR-V warp.redistort_depth.noint64
+[972/1181] SPIR-V warp.redistort_depth
+[973/1181] SPIR-V warp.redistort_img.int8.noint64
+[974/1181] SPIR-V warp.redistort_img.int8
+[975/1181] SPIR-V projection_qgrad.projection_qgrad.atomicadd.noint64
+[976/1181] SPIR-V warp.redistort_img.noint64
+[977/1181] SPIR-V projection_qgrad.projection_qgrad.atomicadd.int8
+[978/1181] SPIR-V warp.redistort_img
+[979/1181] SPIR-V warp.redistort_mask.int8.noint64
+[980/1181] SPIR-V warp.redistort_mask.int8
+[981/1181] SPIR-V projection_qgrad.projection_qgrad.atomicadd.int8.noint64
+[982/1181] SPIR-V warp.warp_depth_equi.int8.noint64
+[983/1181] SPIR-V warp.warp_depth_equi.int8
+[984/1181] SPIR-V warp.redistort_mask.noint64
+[985/1181] SPIR-V warp.redistort_mask
+[986/1181] SPIR-V warp.redistort_normal.int8.noint64
+[987/1181] SPIR-V warp.redistort_normal.int8
+[988/1181] SPIR-V warp.warp_depth_equi.noint64
+[989/1181] SPIR-V warp.redistort_normal.noint64
+[990/1181] SPIR-V warp.redistort_normal
+[991/1181] SPIR-V warp.warp_depth_equi
+[992/1181] SPIR-V projection_qgrad.projection_qgrad.atomicadd
+[993/1181] SPIR-V warp.warp_img_equi.int8.noint64
+[994/1181] SPIR-V warp.warp_img_equi.noint64
+[995/1181] SPIR-V warp.warp_img_equi.int8
+[996/1181] SPIR-V warp.warp_img_equi
+[997/1181] SPIR-V projection_qgrad.projection_qgrad.int8
+[998/1181] SPIR-V warp.warp_depth_wide.int8.noint64
+[999/1181] SPIR-V projection_qgrad.projection_qgrad.int8.noint64
+[1000/1181] SPIR-V warp.warp_depth_wide.int8
+[1001/1181] SPIR-V warp.warp_depth_wide.noint64
+[1002/1181] SPIR-V warp.warp_depth_wide
+[1003/1181] SPIR-V warp.warp_mask_equi.int8.noint64
+[1004/1181] SPIR-V warp.warp_mask_equi.int8
+[1005/1181] SPIR-V warp.warp_img_wide.int8.noint64
+[1006/1181] SPIR-V warp.warp_mask_equi.noint64
+[1007/1181] SPIR-V warp.warp_mask_equi
+[1008/1181] SPIR-V warp.warp_img_wide.noint64
+[1009/1181] SPIR-V warp.warp_img_wide.int8
+[1010/1181] SPIR-V warp.warp_img_wide
+[1011/1181] SPIR-V projection_qgrad.projection_qgrad.noint64
+[1012/1181] SPIR-V warp.warp_normal_equi.int8.noint64
+[1013/1181] SPIR-V warp.warp_normal_equi.int8
+[1014/1181] SPIR-V warp.warp_normal_equi.noint64
+[1015/1181] SPIR-V warp.warp_normal_equi
+[1016/1181] SPIR-V warp.warp_mask_wide.int8
+[1017/1181] SPIR-V warp.warp_mask_wide.int8.noint64
+[1018/1181] SPIR-V warp.warp_mask_wide.noint64
+[1019/1181] SPIR-V warp.warp_mask_wide
+[1020/1181] SPIR-V warp.warp_normal_wide.int8.noint64
+[1021/1181] SPIR-V warp.warp_normal_wide.int8
+[1022/1181] SPIR-V warp.warp_normal_wide.noint64
+[1023/1181] SPIR-V projection_qgrad.projection_qgrad
+[1024/1181] SPIR-V warp.warp_normal_wide
+[1025/1181] Embedding SPIR-V (774 blobs)
+[1026/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\TrainingStubs.gen.cpp.obj
+[1027/1181] Building CXX object CMakeFiles\vk_runtime_smoke.dir\src\backend\vulkan\tests\vk_runtime_smoke.cpp.obj
+[1028/1181] Building CXX object CMakeFiles\vk_pipeline_smoke.dir\src\backend\vulkan\tests\vk_pipeline_smoke.cpp.obj
+[1029/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\SortScanVulkan.cpp.obj
+[1030/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\VulkanPipelines.cpp.obj
+[1031/1181] Building CXX object CMakeFiles\vk_sortscan_test.dir\src\backend\vulkan\tests\vk_sortscan_test.cpp.obj
+[1032/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\VulkanContext.cpp.obj
+[1033/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\VulkanRuntime.cpp.obj
+[1034/1181] Building CXX object CMakeFiles\bilagrid_selector_test.dir\src\backend\tests\bilagrid_selector_test.cpp.obj
+[1035/1181] Building CXX object CMakeFiles\frustum_size_test.dir\src\backend\tests\frustum_size_test.cpp.obj
+[1036/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\BackgroundShFwd.cpp.obj
+[1037/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\Meshing.cpp.obj
+[1038/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\Warp.cpp.obj
+[1039/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\Quantile.cpp.obj
+[1040/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\PixelWiseTrain.cpp.obj
+[1041/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\Bilagrid.cpp.obj
+[1042/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\IntersectTile.cpp.obj
+[1043/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\Optimizer.cpp.obj
+[1044/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\ProjectionBwd.cpp.obj
+[1045/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\ProjectionFwd.cpp.obj
+[1046/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\RasterizeFwd.cpp.obj
+[1047/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\PixelWiseRender.cpp.obj
+[1048/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\RasterizeMomentsFwd.cpp.obj
+[1049/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\PpispImage.cpp.obj
+[1050/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\ProjectionBwdQuantGrad.cpp.obj
+[1051/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\Densify.cpp.obj
+[1052/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\RasterizeBwd.cpp.obj
+[1053/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\FusedProjectionBwdOptim.cpp.obj
+[1054/1181] Building CXX object CMakeFiles\bilagrid_parity.dir\src\backend\tests\bilagrid_parity.cpp.obj
+[1055/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\ProjectionPackedFwd.cpp.obj
+[1056/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\Visualizer.cpp.obj
+[1057/1181] Building CXX object CMakeFiles\split_faces_test.dir\src\backend\tests\split_faces_test.cpp.obj
+[1058/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\src\backend\vulkan\kernels\PerPixelLoss.cpp.obj
+[1059/1181] Building CXX object CMakeFiles\accum_weight_map.dir\src\backend\tests\accum_weight_map.cpp.obj
+[1060/1181] Building CXX object CMakeFiles\spirula.dir\src\app\FrameLook.cpp.obj
+[1061/1181] Building CXX object CMakeFiles\densify_parity.dir\src\backend\tests\densify_parity.cpp.obj
+[1062/1181] Building CXX object CMakeFiles\spirula.dir\src\app\Pano360.cpp.obj
+[1063/1181] Building CXX object CMakeFiles\spirula.dir\src\app\Main.cpp.obj
+[1064/1181] Building CXX object CMakeFiles\mask_loss_semantics.dir\src\backend\tests\mask_loss_semantics.cpp.obj
+[1065/1181] Building CXX object CMakeFiles\fpbo_bench.dir\src\backend\tests\fpbo_bench.cpp.obj
+[1066/1181] Building CXX object CMakeFiles\spirula.dir\src\app\AppPaths.cpp.obj
+[1067/1181] Building CXX object CMakeFiles\fpbo_parity.dir\src\backend\tests\fpbo_parity.cpp.obj
+[1068/1181] Building CXX object CMakeFiles\spirula.dir\src\app\CrashLog.cpp.obj
+[1069/1181] Building CXX object CMakeFiles\gt_bilagrid_sentinels.dir\src\backend\tests\engine\gt_bilagrid_sentinels.cpp.obj
+[1070/1181] Building CXX object CMakeFiles\spirula.dir\src\app\GeometryModel.cpp.obj
+[1071/1181] Building CXX object CMakeFiles\reg_loss_underflow.dir\src\backend\tests\reg_loss_underflow.cpp.obj
+[1072/1181] Building CXX object CMakeFiles\msloss_parity.dir\src\backend\tests\msloss_parity.cpp.obj
+[1073/1181] Building CXX object CMakeFiles\fpbo_split_parity.dir\src\backend\tests\fpbo_split_parity.cpp.obj
+[1074/1181] Building CXX object CMakeFiles\meshing_parity.dir\src\backend\tests\meshing_parity.cpp.obj
+[1075/1181] Building CXX object CMakeFiles\spirula.dir\src\app\DepthPng.cpp.obj
+[1076/1181] Building CXX object CMakeFiles\ppisp_parity.dir\src\backend\tests\ppisp_parity.cpp.obj
+[1077/1181] Building CXX object CMakeFiles\optim_parity.dir\src\backend\tests\optim_parity.cpp.obj
+[1078/1181] Building CXX object CMakeFiles\warp_parity.dir\src\backend\tests\warp_parity.cpp.obj
+[1079/1181] Building CXX object CMakeFiles\engine_nonfinite_recovery.dir\src\backend\tests\engine\engine_nonfinite_recovery.cpp.obj
+[1080/1181] Building CXX object CMakeFiles\engine_reset_state.dir\src\backend\tests\engine\engine_reset_state.cpp.obj
+[1081/1181] Building CXX object CMakeFiles\pwtrain_parity.dir\src\backend\tests\pwtrain_parity.cpp.obj
+[1082/1181] Building CXX object CMakeFiles\spirula.dir\src\app\FrameMask.cpp.obj
+[1083/1181] Building CXX object CMakeFiles\optimgeo_parity.dir\src\backend\tests\optimgeo_parity.cpp.obj
+[1084/1181] Building CXX object CMakeFiles\raster_bench.dir\src\backend\tests\raster_bench.cpp.obj
+[1085/1181] Building CXX object CMakeFiles\spirula.dir\src\app\GeometryWarp.cpp.obj
+[1086/1181] Building CXX object CMakeFiles\engine_train_parity.dir\src\backend\tests\engine\engine_train_parity.cpp.obj
+[1087/1181] Building CXX object CMakeFiles\render_parity.dir\src\backend\tests\render_parity.cpp.obj
+[1088/1181] Building CXX object CMakeFiles\projection_parity.dir\src\backend\tests\projection_parity.cpp.obj
+[1089/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\GlLoader.cpp.obj
+[1090/1181] Building CXX object CMakeFiles\proj_bwd_parity.dir\src\backend\tests\proj_bwd_parity.cpp.obj
+[1091/1181] Building CXX object CMakeFiles\projqgrad_parity.dir\src\backend\tests\projqgrad_parity.cpp.obj
+[1092/1181] Building CXX object CMakeFiles\engine_render_parity.dir\src\backend\tests\engine\engine_render_parity.cpp.obj
+[1093/1181] Building CXX object CMakeFiles\raster_bwd_parity.dir\src\backend\tests\raster_bwd_parity.cpp.obj
+[1094/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\NavCamera.cpp.obj
+[1095/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\Layout.cpp.obj
+[1096/1181] Building CXX object CMakeFiles\spirula.dir\src\app\cli\sam_main.cpp.obj
+[1097/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\FrameSelect.cpp.obj
+[1098/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\Picture.cpp.obj
+[1099/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\Fonts.cpp.obj
+[1100/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\PrepProgress.cpp.obj
+[1101/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\FilmReel.cpp.obj
+[1102/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\MaskPrompt.cpp.obj
+[1103/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\FileDialog.cpp.obj
+[1104/1181] Building CXX object CMakeFiles\spirula.dir\src\app\cli\geometry_main.cpp.obj
+[1105/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\MatchMatrix.cpp.obj
+[1106/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\FeatureWatcher.cpp.obj
+[1107/1181] Building CXX object CMakeFiles\spirula.dir\src\app\cli\mesh_main.cpp.obj
+[1108/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\ReconStamp.cpp.obj
+[1109/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\NativeDialog.cpp.obj
+[1110/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\MeshRunner.cpp.obj
+[1111/1181] Building CXX object CMakeFiles\source_path.dir\src\core\tests\source_path.cpp.obj
+[1112/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\Theme.cpp.obj
+[1113/1181] Building RC object CMakeFiles\spirula.dir\src\app\app.rc.res
+[1114/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\PreviewFrames.cpp.obj
+[1115/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\ModelCache.cpp.obj
+[1116/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\Subprocess.cpp.obj
+[1117/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\TelemetryProbe.cpp.obj
+[1118/1181] Building CXX object CMakeFiles\exr_decode.dir\src\core\tests\exr_decode.cpp.obj
+[1119/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\CompareView.cpp.obj
+[1120/1181] Building CXX object CMakeFiles\delaunay_degenerate.dir\src\mesh\tests\delaunay_degenerate.cpp.obj
+[1121/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\GeometryRunner.cpp.obj
+[1122/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\ColmapRunner.cpp.obj
+[1123/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\SfmProgress.cpp.obj
+[1124/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\PairPreview.cpp.obj
+[1125/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\DatasetPrep.cpp.obj
+[1126/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\BatchTrain.cpp.obj
+[1127/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\SegmentPanel.cpp.obj
+[1128/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\PreviewRenderer.cpp.obj
+[1129/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\ImageCompare.cpp.obj
+[1130/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\TrainRunner.cpp.obj
+[1131/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\SplatViewer.cpp.obj
+[1132/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\ViewportPanel.cpp.obj
+[1133/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\TrainPreset.cpp.obj
+[1134/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\SfmInProcess.cpp.obj
+[1135/1181] Building CXX object CMakeFiles\spirula.dir\src\app\cli\sfm_ba.cpp.obj
+[1136/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\GeometryPanel.cpp.obj
+[1137/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\GuiMain.cpp.obj
+[1138/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\SfmRunner.cpp.obj
+[1139/1181] Building CXX object CMakeFiles\spirula.dir\src\app\cli\sfm_main.cpp.obj
+[1140/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\GuiApp.cpp.obj
+[1141/1181] Building CXX object CMakeFiles\ss_backend_vulkan.dir\vk_shaders_embedded.cpp.obj
+[1142/1181] Linking CXX static library ss_backend_vulkan.lib
+[1143/1181] Linking CXX executable vk_pipeline_smoke.exe
+[1144/1181] Linking CXX executable vk_runtime_smoke.exe
+[1145/1181] Linking CXX executable vk_sortscan_test.exe
+[1146/1181] Linking CXX executable accum_weight_map.exe
+[1147/1181] Linking CXX executable bilagrid_selector_test.exe
+[1148/1181] Linking CXX executable bilagrid_parity.exe
+[1149/1181] Linking CXX executable densify_parity.exe
+[1150/1181] Linking CXX executable fpbo_bench.exe
+[1151/1181] Linking CXX executable fpbo_parity.exe
+[1152/1181] Linking CXX executable frustum_size_test.exe
+[1153/1181] Linking CXX executable fpbo_split_parity.exe
+[1154/1181] Linking CXX executable mask_loss_semantics.exe
+[1155/1181] Linking CXX executable meshing_parity.exe
+[1156/1181] Linking CXX executable msloss_parity.exe
+[1157/1181] Linking CXX executable optim_parity.exe
+[1158/1181] Linking CXX executable optimgeo_parity.exe
+[1159/1181] Linking CXX executable raster_bench.exe
+[1160/1181] Linking CXX executable projection_parity.exe
+[1161/1181] Linking CXX executable pwtrain_parity.exe
+[1162/1181] Linking CXX executable ppisp_parity.exe
+[1163/1181] Linking CXX executable projqgrad_parity.exe
+[1164/1181] Linking CXX executable engine_render_parity.exe
+[1165/1181] Linking CXX executable warp_parity.exe
+[1166/1181] Linking CXX executable engine_reset_state.exe
+[1167/1181] Linking CXX executable gt_bilagrid_sentinels.exe
+[1168/1181] Linking CXX executable split_faces_test.exe
+[1169/1181] Linking CXX executable reg_loss_underflow.exe
+[1170/1181] Linking CXX executable proj_bwd_parity.exe
+[1171/1181] Linking CXX executable engine_nonfinite_recovery.exe
+[1172/1181] Linking CXX executable raster_bwd_parity.exe
+[1173/1181] Linking CXX executable engine_train_parity.exe
+[1174/1181] Linking CXX executable render_parity.exe
+[1175/1181] Linking CXX executable exr_decode.exe
+[1176/1181] Linking CXX executable source_path.exe
+[1177/1181] Linking CXX executable delaunay_degenerate.exe
+[1178/1181] Building CXX object CMakeFiles\spirula.dir\src\app\cli\main.cpp.obj
+[1179/1181] Building CXX object CMakeFiles\spirula.dir\src\app\gui\ConfigUI.cpp.obj
+[1180/1181] Linking CXX executable spirula.exe
+
+Build complete: build\spirula.exe
